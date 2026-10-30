@@ -46,7 +46,7 @@ app.include_router(medical_reports_router, prefix="/api/v1")
 app.include_router(ocr_router, prefix="/api/v1")
 
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def root():
     return {
         "service": "SITA OCR Engine",

@@ -3,7 +3,7 @@ from app.services.ocr import get_ocr_health_info
 
 router = APIRouter(tags=["Health"])
 
-@router.get("/health")
+@router.api_route("/health", methods=["GET", "HEAD"])
 def health():
     return {
         "status": "healthy",
