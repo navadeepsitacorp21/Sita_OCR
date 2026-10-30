@@ -1,4 +1,13 @@
 import os
+
+# ── Strict Memory Controls for 512MB RAM Containers (Render Free Tier) ────────
+# Limit multi-threading libraries from spawning thread memory arenas
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.health_check import router as health_router

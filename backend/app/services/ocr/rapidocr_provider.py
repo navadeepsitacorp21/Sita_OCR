@@ -1,4 +1,5 @@
 import time
+import gc
 import cv2
 import numpy as np
 from typing import List, Dict, Any
@@ -108,22 +109,30 @@ class RapidOCRProvider(BaseOCRProvider):
         img = self.engine.load_img(image_input)
         h, w = img.shape[:2]
 
-        # Automatic downscaling for images (> 1500px) to prevent memory spikes in 512MB RAM
+        # Automatic downscaling for images (> 1200px) to strictly maintain < 200MB memory ceiling
         scale = 1.0
         max_dim = max(h, w)
-        if max_dim > 1500:
-            scale = 1500.0 / max_dim
+        if max_dim > 1200:
+            scale = 1200.0 / max_dim
             img = cv2.resize(img, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
 
         dt_boxes, det_elapse = self.engine.text_detector(img)
         if dt_boxes is None or len(dt_boxes) < 1:
+            del img
+            gc.collect()
             return []
 
         dt_boxes = self.engine.sorted_boxes(dt_boxes)
         dt_boxes = detect_and_filter_table_grid(img, dt_boxes)
 
         img_crop_list = self.engine.get_crop_img_list(img, dt_boxes)
+        # Free main image immediately before heavy recognition step
+        del img
+        gc.collect()
+
         rec_res, rec_elapse = self.engine.text_recognizer(img_crop_list)
+        del img_crop_list
+        gc.collect()
 
         filter_boxes, filter_rec_res = self.engine.filter_boxes_rec_by_score(dt_boxes, rec_res)
         if not filter_boxes:
