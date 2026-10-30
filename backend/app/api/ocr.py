@@ -412,6 +412,9 @@ async def process_ocr_report(
         total_time_ms,
     )
 
+    import gc
+    gc.collect()
+
     return {
         "success": True,
         "user_id": user_id,
