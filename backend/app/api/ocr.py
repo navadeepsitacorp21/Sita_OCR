@@ -386,7 +386,7 @@ async def process_ocr_report(
         if abnormal_cnt > 0:
             overall_st = "needs_review"
 
-        # Build report record conforming to Section 6
+        # Build report record conforming to Section 4 (Structured metadata only, no file storage references)
         report_record = {
             "id": report_id,
             "report_id": report_id,
@@ -395,9 +395,6 @@ async def process_ocr_report(
             "report_date": report_date,
             "collection_date": collection_date,
             "reported_date": reported_date,
-            "storage_path": None,  # Populated by ABP Backend when compressed file is placed in Supabase Storage
-            "report_interpretation": report_interpretation,
-            "file_reference": filename,
             "ocr_status": "completed",
             "page_count": ocr_result.get("page_count", 1),
             "overall_status": overall_st,

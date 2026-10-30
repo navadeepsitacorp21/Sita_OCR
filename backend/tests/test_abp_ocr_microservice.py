@@ -155,7 +155,7 @@ def test_supabase_contract_compatibility():
     assert res.status_code == 200
     data = res.json()
 
-    # medical_reports schema fields
+    # medical_reports schema fields (strictly structured metadata, no storage_path or file_reference)
     rep = data["report"]
     assert rep["id"] == data["report_id"]
     assert rep["report_id"] == data["report_id"]
@@ -164,13 +164,13 @@ def test_supabase_contract_compatibility():
     assert "report_date" in rep
     assert "collection_date" in rep
     assert "reported_date" in rep
-    assert "storage_path" in rep
     assert "overall_status" in rep
     assert "abnormal_count" in rep
     assert "analyzed_at" in rep
-    assert rep["file_reference"] == "lft.png"
     assert rep["ocr_status"] == "completed"
     assert "created_at" in rep
+    assert "storage_path" not in rep
+    assert "file_reference" not in rep
 
     # biomarkers schema fields
     for bm in data["biomarkers"]:

@@ -1,5 +1,6 @@
 -- ==============================================================================
 -- ABP Medical Report & Biomarker Schema for Supabase PostgreSQL
+-- (Structured Extracted Data Only - No File/Binary Storage)
 -- ==============================================================================
 
 -- 1. Enable UUID Extension if not already enabled
@@ -13,13 +14,10 @@ CREATE TABLE IF NOT EXISTS medical_reports (
     report_date VARCHAR(64),
     collection_date VARCHAR(64),
     reported_date VARCHAR(64),
-    storage_path TEXT,
     ocr_status VARCHAR(32) NOT NULL DEFAULT 'completed',
     page_count INTEGER NOT NULL DEFAULT 1,
     overall_status VARCHAR(64) DEFAULT 'normal',
     abnormal_count INTEGER DEFAULT 0,
-    report_interpretation TEXT,
-    file_reference VARCHAR(255),
     analyzed_at TIMESTAMPTZ DEFAULT TIMEZONE('utc', NOW()),
     created_at TIMESTAMPTZ DEFAULT TIMEZONE('utc', NOW())
 );
@@ -83,4 +81,3 @@ CREATE POLICY "Service role full access on biomarkers"
     TO service_role
     USING (true)
     WITH CHECK (true);
-
