@@ -1,0 +1,141 @@
+{
+  "CBC": {
+    "keywords": [
+      "hemoglobin",
+      "haemoglobin",
+      "wbc",
+      "platelet",
+      "platelets",
+      "rbc",
+      "pcv",
+      "mcv",
+      "mch",
+      "mchc",
+      "rdw",
+      "neutrophil",
+      "neutrophils",
+      "lymphocyte",
+      "lymphocytes",
+      "monocyte",
+      "monocytes",
+      "eosinophil",
+      "eosinophils",
+      "basophil",
+      "basophils",
+      "complete blood count",
+      "leucocyte",
+      "leukocyte",
+      "tlc"
+    ],
+    "minimum_matches": 2,
+    "priority": 1
+  },
+  "LIPID_PROFILE": {
+    "keywords": [
+      "lipid profile",
+      "cholesterol",
+      "total cholesterol",
+      "hdl",
+      "ldl",
+      "vldl",
+      "triglyceride",
+      "triglycerides",
+      "hdl cholesterol",
+      "ldl cholesterol"
+    ],
+    "minimum_matches": 2,
+    "priority": 1
+  },
+  "DIABETES_PROFILE": {
+    "keywords": [
+      "hba1c",
+      "fasting blood sugar",
+      "fbs",
+      "postprandial",
+      "ppbs",
+      "glucose fasting",
+      "blood glucose",
+      "glycated hemoglobin",
+      "glycohemoglobin",
+      "average blood glucose",
+      "eag"
+    ],
+    "minimum_matches": 2,
+    "priority": 1
+  },
+  "THYROID_PROFILE": {
+    "keywords": [
+      "thyroid profile",
+      "thyroid function test",
+      "tsh",
+      "t3",
+      "t4",
+      "total triiodothyronine",
+      "total thyroxine",
+      "free t3",
+      "ft3",
+      "free t4",
+      "ft4",
+      "thyroid stimulating hormone"
+    ],
+    "minimum_matches": 2,
+    "priority": 1
+  },
+  "LIVER_FUNCTION_TEST": {
+    "keywords": [
+      "liver function test",
+      "lft",
+      "sgot",
+      "sgpt",
+      "ast",
+      "alt",
+      "bilirubin",
+      "total bilirubin",
+      "direct bilirubin",
+      "alkaline phosphatase",
+      "alp",
+      "total protein",
+      "albumin",
+      "globulin",
+      "a/g ratio"
+    ],
+    "minimum_matches": 2,
+    "priority": 1
+  },
+  "KIDNEY_FUNCTION_TEST": {
+    "keywords": [
+      "kidney function test",
+      "kft",
+      "renal function test",
+      "rft",
+      "creatinine",
+      "serum creatinine",
+      "urea",
+      "blood urea",
+      "blood urea nitrogen",
+      "bun",
+      "uric acid",
+      "calcium",
+      "phosphorus",
+      "egfr"
+    ],
+    "minimum_matches": 2,
+    "priority": 1
+  },
+  "VITAMIN_PROFILE": {
+    "keywords": [
+      "vitamin profile",
+      "vitamin d",
+      "25-hydroxy vitamin d",
+      "25-oh vitamin d",
+      "vit d",
+      "vitamin b12",
+      "vit b12",
+      "cyanocobalamin",
+      "folic acid",
+      "folate"
+    ],
+    "minimum_matches": 1,
+    "priority": 1
+  }
+}

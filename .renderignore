@@ -1,0 +1,58 @@
+# ── Development/benchmark scripts (not needed in production) ──────────────────
+benchmark_*.py
+benchmark_results.json
+benchmark_summary.txt
+check_all_boxes.py
+dump_cbc_tokens.py
+generate_benchmarks.py
+generate_realworld_fixtures.py
+inspect_*.py
+profile_pipeline.py
+run_benchmarks.py
+test_*.py
+test_*.png
+trace_*.py
+validate_real_images.py
+scratch/
+
+# Test images and temp files
+*.tmp
+basophils_ref_crop.png
+baso_*.png
+crop_*.png
+ggt_crop.png
+row_mono.png
+temp_*.png
+drlogy_ocr_lines.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Local DB
+*.db
+*.sqlite
+*.sqlite3
+
+# Local env
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+

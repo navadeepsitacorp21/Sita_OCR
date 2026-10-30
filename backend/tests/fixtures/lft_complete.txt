@@ -1,0 +1,18 @@
+CARE DIAGNOSTICS - LIVER FUNCTION TEST (LFT) REPORT
+
+PATIENT NAME : Aarav Mehra            AGE / GENDER : 25 Y / Male
+UHID / REG NO: NPD/2025/0006          REPORT DATE  : 08-Oct-2025
+
+TEST NAME                   OBSERVED VALUE   UNIT          REFERENCE RANGE
+Total Bilirubin             0.8              mg/dL         0.2 - 1.2
+Direct Bilirubin            0.2              mg/dL         0.0 - 0.3
+Indirect Bilirubin          0.6              mg/dL         0.2 - 0.9
+ALT (SGPT)                  32               U/L           Male <45 Female <35
+AST (SGOT)                  29               U/L           Male <40 Female <35
+Alkaline Phosphatase        94               U/L           44 - 147
+Gamma GT (GGT)              28               U/L           Male <55 Female <38
+Total Protein               7.2              g/dL          6.0 - 8.3
+Albumin                     4.5              g/dL          3.5 - 5.0
+Globulin                    2.7              g/dL          2.0 - 3.5
+A/G Ratio                   1.67             ratio         1.0 - 2.1
+Lactate Dehydrogenase (LDH) 210              U/L           140 - 280

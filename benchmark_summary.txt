@@ -1,0 +1,27 @@
+=== SITA OCR ENGINE PERFORMANCE PROFILING ===
+PaddleOCR Import time: 0.01ms
+PaddleOCR Model Initialization time: 1984.79ms
+
+==================================================
+PROFILING REPORT: Aster CBC (benchmark_data/aster_cbc.png)
+==================================================
+[Cold] Total: 48.753s | OCR: 48.644s | Parse: 52.0ms | DB: 14.09ms | Biomarkers: 7
+[Warm 1] Total: 70.421s | OCR: 70.309s | Parse: 81.96ms | DB: 14.03ms | Biomarkers: 7
+[Warm 2] Total: 152.84s | OCR: 152.708s | Parse: 81.96ms | DB: 13.79ms | Biomarkers: 7
+[Warm 3] Total: 146.54s | OCR: 146.41s | Parse: 82.42ms | DB: 13.66ms | Biomarkers: 7
+
+==================================================
+PROFILING REPORT: Labsmart CBC (benchmark_data/labsmart_cbc.png)
+==================================================
+[Cold] Total: 176.446s | OCR: 176.268s | Parse: 108.07ms | DB: 15.35ms | Biomarkers: 11
+[Warm 1] Total: 174.973s | OCR: 174.821s | Parse: 112.85ms | DB: 14.36ms | Biomarkers: 11
+[Warm 2] Total: 174.079s | OCR: 173.926s | Parse: 109.0ms | DB: 12.72ms | Biomarkers: 11
+[Warm 3] Total: 174.372s | OCR: 174.214s | Parse: 106.12ms | DB: 14.71ms | Biomarkers: 11
+
+==================================================
+PROFILING REPORT: Care Diagnostics LFT (benchmark_data/lft_complete.png)
+==================================================
+[Cold] Total: 176.629s | OCR: 176.456s | Parse: 88.55ms | DB: 9.01ms | Biomarkers: 12
+[Warm 1] Total: 180.812s | OCR: 180.664s | Parse: 110.57ms | DB: 13.35ms | Biomarkers: 12
+[Warm 2] Total: 181.153s | OCR: 180.994s | Parse: 110.74ms | DB: 13.93ms | Biomarkers: 12
+[Warm 3] Total: 131.472s | OCR: 131.368s | Parse: 59.81ms | DB: 9.1ms | Biomarkers: 12

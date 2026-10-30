@@ -1,0 +1,131 @@
+{
+  "labsmart": {
+    "name": "Labsmart Diagnostics",
+    "aliases": [
+      "Labsmart Software",
+      "Powered by Labsmart",
+      "Labsmart"
+    ],
+    "keywords": [
+      "labsmart",
+      "labsmart software"
+    ],
+    "cbc_units": {
+      "wbc_count": "cells/cumm",
+      "platelet_count": "cells/cumm"
+    }
+  },
+  "aster": {
+    "name": "Aster Clinic / Diagnostics",
+    "aliases": [
+      "Aster Clinic",
+      "Aster Diagnostics",
+      "Aster Medcity",
+      "Aster DM Healthcare"
+    ],
+    "keywords": [
+      "aster clinic",
+      "aster diagnostics",
+      "aster medcity",
+      "aster healthcare"
+    ],
+    "cbc_units": {
+      "wbc_count": "cells/cu.mm",
+      "platelet_count": "cells/cu.mm"
+    }
+  },
+  "apollo": {
+    "name": "Apollo Diagnostics",
+    "aliases": [
+      "Apollo Diagnostics",
+      "Apollo Hospitals",
+      "Apollo Clinic"
+    ],
+    "keywords": [
+      "apollo diagnostics",
+      "apollo hospitals",
+      "apollo clinic",
+      "apollo"
+    ],
+    "cbc_units": {
+      "wbc_count": "/cumm",
+      "platelet_count": "/cumm"
+    }
+  },
+  "medplus": {
+    "name": "MedPlus Diagnostics",
+    "aliases": [
+      "MedPlus Diagnostics",
+      "MedPlus Mart",
+      "MedPlus Pathlabs"
+    ],
+    "keywords": [
+      "medplus diagnostics",
+      "medplus pathlabs",
+      "medplus"
+    ],
+    "cbc_units": {
+      "wbc_count": "cells/cumm",
+      "platelet_count": "cells/cumm"
+    }
+  },
+  "vijaya": {
+    "name": "Vijaya Diagnostics",
+    "aliases": [
+      "Vijaya Diagnostic Centre",
+      "Vijaya Diagnostics",
+      "VDC"
+    ],
+    "keywords": [
+      "vijaya diagnostic centre",
+      "vijaya diagnostics",
+      "vijaya diagnostic"
+    ],
+    "cbc_units": {
+      "wbc_count": "/cumm",
+      "platelet_count": "/cumm"
+    }
+  },
+  "thyrocare": {
+    "name": "Thyrocare Technologies",
+    "aliases": [
+      "Thyrocare Technologies Limited",
+      "Thyrocare",
+      "Thyrocare Technologies"
+    ],
+    "keywords": [
+      "thyrocare",
+      "thyrocare technologies"
+    ],
+    "cbc_units": {
+      "wbc_count": "cells/cmm",
+      "platelet_count": "10^3/uL"
+    }
+  },
+  "dr_lal_pathlabs": {
+    "name": "Dr. Lal PathLabs",
+    "aliases": [
+      "Dr. Lal PathLabs",
+      "Dr Lal PathLabs",
+      "Lal PathLabs"
+    ],
+    "keywords": [
+      "dr. lal pathlabs",
+      "dr lal pathlabs",
+      "lal pathlabs"
+    ],
+    "cbc_units": {
+      "wbc_count": "cells/cumm",
+      "platelet_count": "10^3/uL"
+    }
+  },
+  "generic": {
+    "name": "Generic Laboratory",
+    "aliases": [
+      "Generic",
+      "Standard Lab"
+    ],
+    "keywords": [],
+    "cbc_units": {}
+  }
+}

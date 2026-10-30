@@ -1,0 +1,1199 @@
+{
+  "biomarkers": [
+    {
+      "key": "hemoglobin",
+      "name": "Hemoglobin",
+      "aliases": [
+        "Hemoglobin",
+        "Haemoglobin",
+        "Hb",
+        "HGB"
+      ],
+      "default_unit": "gm/dL",
+      "default_reference_range": "12.5-16.0",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "rbc_count",
+      "name": "RBC Count",
+      "aliases": [
+        "RBC Count",
+        "Red Blood Cell Count",
+        "Total RBC Count",
+        "Total RBC",
+        "Erythrocyte Count",
+        "Erythrocytes",
+        "RBC"
+      ],
+      "default_unit": "10^6/μL",
+      "default_reference_range": "4.0-5.5",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "wbc_count",
+      "name": "WBC Count",
+      "aliases": [
+        "WBC Count",
+        "White Blood Cell Count",
+        "Total WBC",
+        "Total Leucocyte Count",
+        "Total Leukocyte Count",
+        "Leucocytes",
+        "Leukocytes",
+        "TLC",
+        "WBC"
+      ],
+      "default_unit": "cells/cu.mm",
+      "default_reference_range": "4000-11000",
+      "category": "CBC",
+      "group": "wbc_indices"
+    },
+    {
+      "key": "platelet_count",
+      "name": "Platelet Count",
+      "aliases": [
+        "Platelet Count",
+        "Platelets",
+        "Total Platelet Count",
+        "Thrombocyte Count",
+        "Thrombocytes",
+        "PLT"
+      ],
+      "default_unit": "10^3/μL",
+      "default_reference_range": "150-450",
+      "category": "CBC",
+      "group": "platelet_indices"
+    },
+    {
+      "key": "pcv",
+      "name": "PCV (Packed Cell Volume)",
+      "aliases": [
+        "PCV",
+        "Packed Cell Volume",
+        "Hematocrit Value, Hct",
+        "Hematocrit Value",
+        "Hematocrit",
+        "Haematocrit",
+        "HCT",
+        "Packed Cell Volume (PCV)"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "36-46",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "mcv",
+      "name": "MCV",
+      "aliases": [
+        "MCV",
+        "Mean Corpuscular Volume, MCV",
+        "Mean CorpuscularVolume, MCV",
+        "Mean CorpuscularVolume",
+        "Mean Corpuscular Volume",
+        "Mean Cell Volume"
+      ],
+      "default_unit": "fL",
+      "default_reference_range": "80-100",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "mch",
+      "name": "MCH",
+      "aliases": [
+        "MCH",
+        "Mean Cell Haemoglobin, MCH",
+        "Mean Cell Hemoglobin, MCH",
+        "Mean Cell Haemoglobin",
+        "Mean Cell Hemoglobin",
+        "Mean Corpuscular Hemoglobin",
+        "Mean Corpuscular Haemoglobin"
+      ],
+      "default_unit": "pg",
+      "default_reference_range": "27-32",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "mchc",
+      "name": "MCHC",
+      "aliases": [
+        "MCHC",
+        "Mean Cell Haemoglobin Concentration",
+        "Mean Cell Hemoglobin Concentration",
+        "Mean Cell Haemoglobin Conc",
+        "Mean Cell Hemoglobin Conc",
+        "Mean Cell Haemoglobin Con",
+        "Mean Cell Hemoglobin Con",
+        "Mean Corpuscular Hemoglobin Concentration",
+        "Mean Corpuscular Haemoglobin Concentration"
+      ],
+      "default_unit": "g/dL",
+      "default_reference_range": "31.5-34.5",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "rdw",
+      "name": "RDW",
+      "aliases": [
+        "RDW",
+        "Red Cell Distribution Width"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "11.5-14.5",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "rdw_cv",
+      "name": "RDW-CV",
+      "aliases": [
+        "RDW-CV",
+        "RDW CV",
+        "R.D.W. - CV",
+        "R.D.W. -CV",
+        "R.D.W. CV",
+        "RDW - CV",
+        "Red Cell Distribution Width - CV"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "11.5-14.5",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "rdw_sd",
+      "name": "RDW-SD",
+      "aliases": [
+        "RDW-SD",
+        "RDW SD",
+        "R.D.W. - SD",
+        "R.D.W. -SD",
+        "R.D.W. SD",
+        "RDW - SD",
+        "Red Cell Distribution Width - SD"
+      ],
+      "default_unit": "fL",
+      "default_reference_range": "39-46",
+      "category": "CBC",
+      "group": "rbc_indices"
+    },
+    {
+      "key": "mpv",
+      "name": "MPV",
+      "aliases": [
+        "MPV",
+        "Mean Platelet Volume, MPV",
+        "Mean Platelet Volume"
+      ],
+      "default_unit": "fL",
+      "default_reference_range": "7.5-11.5",
+      "category": "CBC",
+      "group": "platelet_indices"
+    },
+    {
+      "key": "neutrophils",
+      "name": "Neutrophils",
+      "aliases": [
+        "Neutrophils",
+        "Neutrophil",
+        "Segmented Neutrophils",
+        "Polymorphs"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "40-70",
+      "category": "CBC",
+      "group": "differential_wbc"
+    },
+    {
+      "key": "lymphocytes",
+      "name": "Lymphocytes",
+      "aliases": [
+        "Lymphocytes",
+        "Lymphocyte",
+        "Lymphs"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "20-40",
+      "category": "CBC",
+      "group": "differential_wbc"
+    },
+    {
+      "key": "monocytes",
+      "name": "Monocytes",
+      "aliases": [
+        "Monocytes",
+        "Monocyte",
+        "Monos"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "2-8",
+      "category": "CBC",
+      "group": "differential_wbc"
+    },
+    {
+      "key": "eosinophils",
+      "name": "Eosinophils",
+      "aliases": [
+        "Eosinophils",
+        "Eosinophil",
+        "Eos"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "1-6",
+      "category": "CBC",
+      "group": "differential_wbc"
+    },
+    {
+      "key": "basophils",
+      "name": "Basophils",
+      "aliases": [
+        "Basophils",
+        "Basophil",
+        "Baso"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "0-1",
+      "category": "CBC",
+      "group": "differential_wbc"
+    },
+    {
+      "key": "total_cholesterol",
+      "name": "Total Cholesterol",
+      "aliases": [
+        "Total Cholesterol",
+        "Serum Cholesterol",
+        "Cholesterol"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "<200",
+      "category": "LIPID_PROFILE",
+      "group": "cholesterol"
+    },
+    {
+      "key": "hdl",
+      "name": "HDL Cholesterol",
+      "aliases": [
+        "HDL Cholesterol",
+        "HDL-C",
+        "High Density Lipoprotein",
+        "HDL - Cholesterol",
+        "HDL"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": ">40",
+      "category": "LIPID_PROFILE",
+      "group": "cholesterol"
+    },
+    {
+      "key": "ldl",
+      "name": "LDL Cholesterol",
+      "aliases": [
+        "LDL Cholesterol",
+        "LDL-C",
+        "Low Density Lipoprotein",
+        "LDL - Cholesterol",
+        "LDL"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "<100",
+      "category": "LIPID_PROFILE",
+      "group": "cholesterol"
+    },
+    {
+      "key": "vldl",
+      "name": "VLDL Cholesterol",
+      "aliases": [
+        "VLDL Cholesterol",
+        "VLDL-C",
+        "Very Low Density Lipoprotein",
+        "VLDL - Cholesterol",
+        "VLDL"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "5-40",
+      "category": "LIPID_PROFILE",
+      "group": "cholesterol"
+    },
+    {
+      "key": "triglycerides",
+      "name": "Triglycerides",
+      "aliases": [
+        "Triglycerides",
+        "Serum Triglycerides",
+        "TG"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "<150",
+      "category": "LIPID_PROFILE",
+      "group": "triglycerides"
+    },
+    {
+      "key": "non_hdl",
+      "name": "Non-HDL Cholesterol",
+      "aliases": [
+        "Non-HDL Cholesterol",
+        "Non HDL Cholesterol",
+        "Non-HDL-C",
+        "Non-HDL"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "<130",
+      "category": "LIPID_PROFILE",
+      "group": "cholesterol"
+    },
+    {
+      "key": "cholesterol_hdl_ratio",
+      "name": "Cholesterol / HDL Ratio",
+      "aliases": [
+        "Total Cholesterol / HDL Ratio",
+        "Total Cholesterol/HDL Ratio",
+        "Cholesterol/HDL Ratio",
+        "TC/HDL Ratio",
+        "CHOL/HDL Ratio",
+        "Cholesterol / HDL Ratio",
+        "TC / HDL Ratio",
+        "TC / HDL",
+        "TC/HDL"
+      ],
+      "default_unit": "ratio",
+      "default_reference_range": "3-5",
+      "category": "LIPID_PROFILE",
+      "group": "ratios"
+    },
+    {
+      "key": "ldl_hdl_ratio",
+      "name": "LDL / HDL Ratio",
+      "aliases": [
+        "LDL / HDL Ratio",
+        "LDL/HDL Ratio",
+        "LDL to HDL Ratio",
+        "LDL:HDL Ratio",
+        "LDL / HDL",
+        "LDL/HDL",
+        "LDL-C / HDL-C Ratio",
+        "LDL-C/HDL-C Ratio"
+      ],
+      "default_unit": "ratio",
+      "default_reference_range": "<3.0",
+      "category": "LIPID_PROFILE",
+      "group": "ratios",
+      "optional": true
+    },
+    {
+      "key": "apolipoprotein_a1",
+      "name": "Apolipoprotein A1 (ApoA1)",
+      "aliases": [
+        "Apolipoprotein A1 (ApoA1)",
+        "Apolipoprotein A1",
+        "Apolipoprotein A-1",
+        "Apolipoprotein-A1",
+        "Apo A1",
+        "ApoA1",
+        "Apo-A1",
+        "Apo A-1",
+        "Apolipoprotein A"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "110-205",
+      "category": "LIPID_PROFILE",
+      "group": "apolipoproteins",
+      "optional": true
+    },
+    {
+      "key": "apolipoprotein_b",
+      "name": "Apolipoprotein B (ApoB)",
+      "aliases": [
+        "Apolipoprotein B (ApoB)",
+        "Apolipoprotein B",
+        "Apolipoprotein-B",
+        "Apo B",
+        "ApoB",
+        "Apo-B"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "60-130",
+      "category": "LIPID_PROFILE",
+      "group": "apolipoproteins",
+      "optional": true
+    },
+    {
+      "key": "apob_apoa1_ratio",
+      "name": "Apo B / Apo A1 Ratio",
+      "aliases": [
+        "Apo B / Apo A1 Ratio",
+        "ApoB / ApoA1 Ratio",
+        "Apo B/Apo A1 Ratio",
+        "ApoB/ApoA1 Ratio",
+        "Apo B / Apo A1",
+        "ApoB / ApoA1",
+        "Apo B/Apo A1",
+        "ApoB/ApoA1",
+        "Apo B:Apo A1 Ratio",
+        "ApoB:ApoA1 Ratio"
+      ],
+      "default_unit": "ratio",
+      "default_reference_range": "0.35-1.0",
+      "category": "LIPID_PROFILE",
+      "group": "ratios",
+      "optional": true
+    },
+    {
+      "key": "fasting_blood_sugar",
+      "name": "Fasting Blood Sugar",
+      "aliases": [
+        "Fasting Blood Sugar",
+        "Fasting Glucose",
+        "Glucose Fasting",
+        "FBS",
+        "Fasting Blood Glucose",
+        "Blood Sugar Fasting",
+        "Glucose - Fasting"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "70-99",
+      "category": "DIABETES_PROFILE",
+      "group": "blood_glucose"
+    },
+    {
+      "key": "postprandial_blood_sugar",
+      "name": "Postprandial Blood Sugar",
+      "aliases": [
+        "Postprandial Blood Sugar",
+        "Post Prandial Blood Sugar",
+        "Postprandial Glucose",
+        "PP Glucose",
+        "PPBS",
+        "2 Hours Post Prandial",
+        "Post Prandial Glucose",
+        "Blood Sugar PP",
+        "Glucose - PP"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "70-140",
+      "category": "DIABETES_PROFILE",
+      "group": "blood_glucose"
+    },
+    {
+      "key": "random_blood_sugar",
+      "name": "Random Blood Sugar",
+      "aliases": [
+        "Random Blood Sugar",
+        "Random Glucose",
+        "RBS",
+        "Blood Glucose Random",
+        "Blood Sugar Random",
+        "Glucose - Random"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "70-140",
+      "category": "DIABETES_PROFILE",
+      "group": "blood_glucose"
+    },
+    {
+      "key": "hba1c",
+      "name": "HbA1c",
+      "aliases": [
+        "HbA1c",
+        "Glycated Hemoglobin",
+        "Glycosylated Hemoglobin",
+        "Glycohemoglobin",
+        "Hemoglobin A1c",
+        "HbA1c - Glycated Hemoglobin"
+      ],
+      "default_unit": "%",
+      "default_reference_range": "4.0-5.6",
+      "category": "DIABETES_PROFILE",
+      "group": "long_term_control"
+    },
+    {
+      "key": "estimated_average_glucose",
+      "name": "Estimated Average Glucose",
+      "aliases": [
+        "Estimated Average Glucose",
+        "eAG",
+        "Average Blood Glucose",
+        "Mean Blood Glucose"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "",
+      "category": "DIABETES_PROFILE",
+      "group": "long_term_control"
+    },
+    {
+      "key": "tsh",
+      "name": "TSH",
+      "aliases": [
+        "TSH",
+        "Thyroid Stimulating Hormone",
+        "Ultrasensitive TSH",
+        "TSH - Ultrasensitive",
+        "Thyroid Stimulating Hormone (TSH)",
+        "Serum TSH"
+      ],
+      "default_unit": "µIU/mL",
+      "default_reference_range": "0.4-4.0",
+      "category": "THYROID_PROFILE",
+      "group": "pituitary_hormones"
+    },
+    {
+      "key": "t3_total",
+      "name": "Total T3",
+      "aliases": [
+        "Total T3",
+        "T3 Total",
+        "Triiodothyronine",
+        "Total Triiodothyronine",
+        "T3 - Total",
+        "T3"
+      ],
+      "default_unit": "ng/dL",
+      "default_reference_range": "80-200",
+      "category": "THYROID_PROFILE",
+      "group": "thyroid_hormones"
+    },
+    {
+      "key": "t4_total",
+      "name": "Total T4",
+      "aliases": [
+        "Total T4",
+        "T4 Total",
+        "Thyroxine",
+        "Total Thyroxine",
+        "T4 - Total",
+        "T4"
+      ],
+      "default_unit": "µg/dL",
+      "default_reference_range": "5.0-12.0",
+      "category": "THYROID_PROFILE",
+      "group": "thyroid_hormones"
+    },
+    {
+      "key": "free_t3",
+      "name": "Free T3",
+      "aliases": [
+        "Free T3",
+        "FT3",
+        "Free Triiodothyronine",
+        "FT3 - Free Triiodothyronine",
+        "Free T3 (FT3)"
+      ],
+      "default_unit": "pg/mL",
+      "default_reference_range": "2.0-4.4",
+      "category": "THYROID_PROFILE",
+      "group": "thyroid_hormones"
+    },
+    {
+      "key": "free_t4",
+      "name": "Free T4",
+      "aliases": [
+        "Free T4",
+        "FT4",
+        "Free Thyroxine",
+        "FT4 - Free Thyroxine",
+        "Free T4 (FT4)"
+      ],
+      "default_unit": "ng/dL",
+      "default_reference_range": "0.8-1.8",
+      "category": "THYROID_PROFILE",
+      "group": "thyroid_hormones"
+    },
+    {
+      "key": "alt_sgpt",
+      "name": "ALT (SGPT)",
+      "aliases": [
+        "ALT (SGPT)",
+        "ALT",
+        "SGPT",
+        "Alanine Aminotransferase",
+        "Alanine Transaminase",
+        "SGPT / ALT",
+        "ALT / SGPT",
+        "Serum Glutamic Pyruvic Transaminase"
+      ],
+      "default_unit": "U/L",
+      "default_reference_range": "7-56",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "liver_enzymes"
+    },
+    {
+      "key": "ast_sgot",
+      "name": "AST (SGOT)",
+      "aliases": [
+        "AST (SGOT)",
+        "AST",
+        "SGOT",
+        "Aspartate Aminotransferase",
+        "Aspartate Transaminase",
+        "SGOT / AST",
+        "AST / SGOT",
+        "Serum Glutamic Oxaloacetic Transaminase"
+      ],
+      "default_unit": "U/L",
+      "default_reference_range": "8-40",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "liver_enzymes"
+    },
+    {
+      "key": "alkaline_phosphatase",
+      "name": "Alkaline Phosphatase",
+      "aliases": [
+        "Alkaline Phosphatase",
+        "ALP",
+        "Alkaline Phosphatase (ALP)",
+        "Serum Alkaline Phosphatase",
+        "Alk Phos"
+      ],
+      "default_unit": "U/L",
+      "default_reference_range": "44-147",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "liver_enzymes"
+    },
+    {
+      "key": "total_bilirubin",
+      "name": "Total Bilirubin",
+      "aliases": [
+        "Total Bilirubin",
+        "Bilirubin Total",
+        "Bilirubin (Total)",
+        "Serum Bilirubin Total",
+        "Bilirubin - Total",
+        "Total Serum Bilirubin",
+        "Bilirubin"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "0.2-1.2",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "bilirubin"
+    },
+    {
+      "key": "direct_bilirubin",
+      "name": "Direct Bilirubin",
+      "aliases": [
+        "Direct Bilirubin",
+        "Bilirubin Direct",
+        "Bilirubin (Direct)",
+        "Conjugated Bilirubin",
+        "Serum Bilirubin Direct",
+        "Bilirubin - Direct"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "0.0-0.3",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "bilirubin"
+    },
+    {
+      "key": "indirect_bilirubin",
+      "name": "Indirect Bilirubin",
+      "aliases": [
+        "Indirect Bilirubin",
+        "Bilirubin Indirect",
+        "Bilirubin (Indirect)",
+        "Unconjugated Bilirubin",
+        "Serum Bilirubin Indirect",
+        "Bilirubin - Indirect"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "0.2-0.9",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "bilirubin"
+    },
+    {
+      "key": "total_protein",
+      "name": "Total Protein",
+      "aliases": [
+        "Total Protein",
+        "Serum Total Protein",
+        "Protein Total",
+        "Protein (Total)",
+        "Total Proteins",
+        "Serum Protein"
+      ],
+      "default_unit": "g/dL",
+      "default_reference_range": "6.0-8.3",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "proteins"
+    },
+    {
+      "key": "albumin",
+      "name": "Albumin",
+      "aliases": [
+        "Albumin",
+        "Serum Albumin",
+        "Albumin - Serum"
+      ],
+      "default_unit": "g/dL",
+      "default_reference_range": "3.5-5.0",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "proteins"
+    },
+    {
+      "key": "globulin",
+      "name": "Globulin",
+      "aliases": [
+        "Globulin",
+        "Serum Globulin",
+        "Globulin - Serum"
+      ],
+      "default_unit": "g/dL",
+      "default_reference_range": "2.0-3.5",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "proteins"
+    },
+    {
+      "key": "albumin_globulin_ratio",
+      "name": "Albumin / Globulin Ratio",
+      "aliases": [
+        "Albumin / Globulin Ratio",
+        "Albumin/Globulin Ratio",
+        "A/G Ratio",
+        "A / G Ratio",
+        "A:G Ratio",
+        "AG Ratio",
+        "Albumin Globulin Ratio"
+      ],
+      "default_unit": "ratio",
+      "default_reference_range": "1.0-2.2",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "ratios"
+    },
+    {
+      "key": "ggt",
+      "name": "Gamma GT (GGT)",
+      "aliases": [
+        "Gamma GT (GGT)",
+        "Gamma GT",
+        "Gamma Glutamyl Transferase",
+        "GGT",
+        "GGTP"
+      ],
+      "default_unit": "U/L",
+      "default_reference_range": "10-49",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "liver_enzymes"
+    },
+    {
+      "key": "ldh",
+      "name": "Lactate Dehydrogenase (LDH)",
+      "aliases": [
+        "Lactate Dehydrogenase (LDH)",
+        "Lactate Dehydrogenase",
+        "Serum LDH",
+        "LDH"
+      ],
+      "default_unit": "U/L",
+      "default_reference_range": "140-280",
+      "category": "LIVER_FUNCTION_TEST",
+      "group": "liver_enzymes"
+    },
+    {
+      "key": "serum_creatinine",
+      "name": "Serum Creatinine",
+      "aliases": [
+        "Serum Creatinine",
+        "Creatinine",
+        "Creatinine - Serum",
+        "S. Creatinine",
+        "Creatinine Serum"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "0.6-1.3",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "kidney_filtration"
+    },
+    {
+      "key": "blood_urea",
+      "name": "Blood Urea",
+      "aliases": [
+        "Blood Urea",
+        "Urea",
+        "Urea - Serum",
+        "S. Urea",
+        "Urea Serum"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "15-40",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "kidney_filtration"
+    },
+    {
+      "key": "blood_urea_nitrogen",
+      "name": "Blood Urea Nitrogen",
+      "aliases": [
+        "Blood Urea Nitrogen",
+        "BUN",
+        "Serum BUN",
+        "Urea Nitrogen",
+        "B.U.N."
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "7-20",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "kidney_filtration"
+    },
+    {
+      "key": "uric_acid",
+      "name": "Uric Acid",
+      "aliases": [
+        "Uric Acid",
+        "Serum Uric Acid",
+        "S. Uric Acid",
+        "Uric Acid - Serum"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "3.5-7.2",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "metabolic_markers"
+    },
+    {
+      "key": "egfr",
+      "name": "Estimated GFR (eGFR)",
+      "aliases": [
+        "Estimated GFR",
+        "eGFR",
+        "Glomerular Filtration Rate",
+        "EGFR",
+        "GFR",
+        "Estimated Glomerular Filtration Rate",
+        "eGFR (CKD-EPI)"
+      ],
+      "default_unit": "mL/min/1.73m²",
+      "default_reference_range": ">90",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "kidney_function"
+    },
+    {
+      "key": "urea_creatinine_ratio",
+      "name": "Urea / Creatinine Ratio",
+      "aliases": [
+        "Urea / Creatinine Ratio",
+        "Urea/Creatinine Ratio",
+        "BUN/Creatinine Ratio",
+        "BUN / Creatinine Ratio",
+        "Urea : Creatinine Ratio",
+        "BUN:Creatinine Ratio"
+      ],
+      "default_unit": "ratio",
+      "default_reference_range": "10-20",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "ratios"
+    },
+    {
+      "key": "sodium",
+      "name": "Sodium",
+      "aliases": [
+        "Sodium",
+        "Serum Sodium",
+        "Na+",
+        "Sodium (Na+)",
+        "Sodium - Serum"
+      ],
+      "default_unit": "mmol/L",
+      "default_reference_range": "135-145",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "electrolytes"
+    },
+    {
+      "key": "potassium",
+      "name": "Potassium",
+      "aliases": [
+        "Potassium",
+        "Serum Potassium",
+        "K+",
+        "Potassium (K+)",
+        "Potassium - Serum"
+      ],
+      "default_unit": "mmol/L",
+      "default_reference_range": "3.5-5.1",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "electrolytes"
+    },
+    {
+      "key": "calcium",
+      "name": "Serum Calcium",
+      "aliases": [
+        "Calcium",
+        "Serum Calcium",
+        "S. Calcium",
+        "Total Calcium"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "8.8-10.6",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "electrolytes"
+    },
+    {
+      "key": "phosphorus",
+      "name": "Serum Phosphorus",
+      "aliases": [
+        "Phosphorus",
+        "Serum Phosphorus",
+        "S. Phosphorus",
+        "Phosphate",
+        "Serum Phosphate"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "2.5-4.5",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "electrolytes"
+    },
+    {
+      "key": "magnesium",
+      "name": "Serum Magnesium",
+      "aliases": [
+        "Magnesium",
+        "Serum Magnesium",
+        "S. Magnesium",
+        "Mg"
+      ],
+      "default_unit": "mg/dL",
+      "default_reference_range": "1.7-2.4",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "electrolytes"
+    },
+    {
+      "key": "chloride",
+      "name": "Serum Chloride",
+      "aliases": [
+        "Chloride",
+        "Serum Chloride",
+        "S. Chloride",
+        "Cl",
+        "Cl-"
+      ],
+      "default_unit": "mmol/L",
+      "default_reference_range": "98-107",
+      "category": "KIDNEY_FUNCTION_TEST",
+      "group": "electrolytes"
+    },
+    {
+      "key": "vitamin_d",
+      "name": "Vitamin D Total",
+      "display_name": "Vitamin D Total",
+      "family": "vitamin_d_family",
+      "is_primary": true,
+      "aliases": [
+        "vitamin d total",
+        "25 hydroxy vitamin d total",
+        "25-oh vitamin d total",
+        "25-hydroxy vitamin d",
+        "25-hydroxyvitamin d",
+        "25 - oh vitamin d",
+        "25-oh vitamin d",
+        "vitamin d (25-oh)",
+        "25(oh)d",
+        "vitamin d",
+        "vit d"
+      ],
+      "priority_aliases": [
+        "vitamin d total",
+        "25 hydroxy vitamin d total",
+        "25-oh vitamin d total",
+        "25 - oh vitamin d total",
+        "total 25-hydroxy vitamin d",
+        "25-hydroxy vitamin d total"
+      ],
+      "fallback_aliases": [
+        "vitamin d3",
+        "vitamin d2",
+        "vit d3",
+        "vit d2"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "30-100",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_d3",
+      "name": "Vitamin D3 (Cholecalciferol)",
+      "display_name": "Vitamin D3",
+      "family": "vitamin_d_family",
+      "is_primary": false,
+      "aliases": [
+        "vitamin d3",
+        "vit d3",
+        "25-oh vitamin d3",
+        "25-hydroxyvitamin d3",
+        "cholecalciferol"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "30-100",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins",
+      "optional": true
+    },
+    {
+      "key": "vitamin_d2",
+      "name": "Vitamin D2 (Ergocalciferol)",
+      "display_name": "Vitamin D2",
+      "family": "vitamin_d_family",
+      "is_primary": false,
+      "aliases": [
+        "vitamin d2",
+        "vit d2",
+        "25-oh vitamin d2",
+        "25-hydroxyvitamin d2",
+        "ergocalciferol"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins",
+      "optional": true
+    },
+    {
+      "key": "vitamin_b12",
+      "name": "Vitamin B12",
+      "aliases": [
+        "Vitamin B12",
+        "B12",
+        "Cyanocobalamin",
+        "Vit B12",
+        "Serum Vitamin B12",
+        "Serum B12",
+        "Vitamin B-12"
+      ],
+      "default_unit": "pg/mL",
+      "default_reference_range": "200-900",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_b1",
+      "name": "Vitamin B1",
+      "aliases": [
+        "Vitamin B1",
+        "Thiamin",
+        "Thiamine",
+        "Vit B1",
+        "Vitamin B-1"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "0.5-4.0",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_b2",
+      "name": "Vitamin B2",
+      "aliases": [
+        "Vitamin B2",
+        "Riboflavin",
+        "Riboflavine",
+        "Vit B2",
+        "Vitamin B-2"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "1.6-58.2",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_b3",
+      "name": "Vitamin B3",
+      "aliases": [
+        "Vitamin B3",
+        "Nicotinic Acid",
+        "Niacin",
+        "Vit B3",
+        "Vitamin B-3"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "0.3-9.8",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_b5",
+      "name": "Vitamin B5",
+      "aliases": [
+        "Vitamin B5",
+        "Pantothenic Acid",
+        "Vit B5",
+        "Vitamin B-5"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "11-150",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_b6",
+      "name": "Vitamin B6",
+      "aliases": [
+        "Vitamin B6",
+        "P5P",
+        "Pyridoxine",
+        "Vit B6",
+        "Vitamin B-6"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "5-50",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "vitamin_b7",
+      "name": "Vitamin B7",
+      "aliases": [
+        "Vitamin B7",
+        "Biotin",
+        "Vit B7",
+        "Vitamin B-7"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "0.2-3.0",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "folate",
+      "name": "Folate",
+      "aliases": [
+        "Folate",
+        "Folic Acid",
+        "Vitamin B9",
+        "Serum Folate",
+        "Serum Folic Acid"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "3-17",
+      "category": "VITAMIN_PROFILE",
+      "group": "vitamins"
+    },
+    {
+      "key": "ferritin",
+      "name": "Ferritin",
+      "aliases": [
+        "Ferritin",
+        "Serum Ferritin",
+        "Ferritin - Serum",
+        "S. Ferritin"
+      ],
+      "default_unit": "ng/mL",
+      "default_reference_range": "30-400",
+      "category": "VITAMIN_PROFILE",
+      "group": "iron_storage"
+    },
+    {
+      "key": "iron",
+      "name": "Iron",
+      "aliases": [
+        "Iron",
+        "Serum Iron",
+        "Total Iron",
+        "Iron - Serum",
+        "S. Iron"
+      ],
+      "default_unit": "µg/dL",
+      "default_reference_range": "60-170",
+      "category": "VITAMIN_PROFILE",
+      "group": "iron_storage"
+    }
+  ]
+}

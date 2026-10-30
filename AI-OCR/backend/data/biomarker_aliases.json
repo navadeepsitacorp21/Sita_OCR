@@ -1,0 +1,678 @@
+{
+  "hemoglobin": [
+    "haemoglobin",
+    "hemoglobin",
+    "hgb",
+    "hb"
+  ],
+  "rbc_count": [
+    "red blood cell count",
+    "erythrocyte count",
+    "total rbc",
+    "erythrocytes",
+    "rbc count",
+    "rbc"
+  ],
+  "wbc_count": [
+    "total leucocyte count",
+    "total leukocyte count",
+    "white blood cell count",
+    "total count",
+    "total wbc",
+    "leucocytes",
+    "leukocytes",
+    "tlc",
+    "wbc count",
+    "wbc"
+  ],
+  "platelet_count": [
+    "total platelet count",
+    "thrombocyte count",
+    "platelet count",
+    "thrombocytes",
+    "platelets",
+    "platelet",
+    "plt"
+  ],
+  "pcv": [
+    "packed cell volume (pcv)",
+    "packed cell volume",
+    "haematocrit",
+    "hematocrit",
+    "pcv",
+    "hct"
+  ],
+  "mcv": [
+    "mean corpuscular volume",
+    "mcv"
+  ],
+  "mch": [
+    "mean corpuscular hemoglobin",
+    "mean corpuscular haemoglobin",
+    "mch"
+  ],
+  "mchc": [
+    "mean corpuscular hemoglobin concentration",
+    "mean corpuscular haemoglobin concentration",
+    "mchc"
+  ],
+  "rdw": [
+    "red cell distribution width",
+    "rdw"
+  ],
+  "rdw_cv": [
+    "red cell distribution width - cv",
+    "rdw-cv",
+    "rdw cv"
+  ],
+  "rdw_sd": [
+    "red cell distribution width - sd",
+    "rdw-sd",
+    "rdw sd"
+  ],
+  "mpv": [
+    "mean platelet volume",
+    "mpv"
+  ],
+  "neutrophils": [
+    "segmented neutrophils",
+    "neutrophil %",
+    "neutrophils",
+    "neutrophil",
+    "polymorphs",
+    "neut %",
+    "pmn"
+  ],
+  "lymphocytes": [
+    "lymphocyte %",
+    "lymphocytes",
+    "lymphocyte",
+    "lymph %",
+    "lymphs"
+  ],
+  "monocytes": [
+    "monocyte %",
+    "monocytes",
+    "monocyte",
+    "mono %",
+    "monos"
+  ],
+  "eosinophils": [
+    "eosinophil %",
+    "eosinophils",
+    "eosinophil",
+    "eos %",
+    "eos"
+  ],
+  "basophils": [
+    "basophil %",
+    "basophils",
+    "basophil",
+    "baso %",
+    "baso"
+  ],
+  "total_cholesterol": [
+    "total cholesterol",
+    "serum cholesterol",
+    "cholesterol total",
+    "cholesterol"
+  ],
+  "hdl": [
+    "high density lipoprotein cholesterol",
+    "high density lipoprotein",
+    "hdl - cholesterol",
+    "hdl cholesterol",
+    "hdl-c",
+    "hdl"
+  ],
+  "ldl": [
+    "low density lipoprotein cholesterol",
+    "low density lipoprotein",
+    "ldl - cholesterol",
+    "ldl cholesterol",
+    "ldl-c",
+    "ldl"
+  ],
+  "vldl": [
+    "very low density lipoprotein cholesterol",
+    "very low density lipoprotein",
+    "vldl - cholesterol",
+    "vldl cholesterol",
+    "vldl-c",
+    "vldl"
+  ],
+  "triglycerides": [
+    "serum triglycerides",
+    "triglycerides",
+    "tg"
+  ],
+  "non_hdl": [
+    "non-hdl cholesterol",
+    "non hdl cholesterol",
+    "non-hdl-c",
+    "non-hdl",
+    "non hdl"
+  ],
+  "cholesterol_hdl_ratio": [
+    "total cholesterol / hdl ratio",
+    "total cholesterol/hdl ratio",
+    "cholesterol / hdl ratio",
+    "cholesterol/hdl ratio",
+    "chol/hdl ratio",
+    "tc / hdl ratio",
+    "tc/hdl ratio"
+  ],
+  "fasting_blood_sugar": [
+    "fasting blood glucose",
+    "fasting blood sugar",
+    "blood sugar fasting",
+    "glucose - fasting",
+    "glucose fasting",
+    "fasting glucose",
+    "fbs"
+  ],
+  "postprandial_blood_sugar": [
+    "2 hours post prandial",
+    "post prandial blood sugar",
+    "postprandial blood sugar",
+    "post prandial glucose",
+    "postprandial glucose",
+    "blood sugar pp",
+    "glucose - pp",
+    "pp glucose",
+    "ppbs"
+  ],
+  "random_blood_sugar": [
+    "blood glucose random",
+    "random blood sugar",
+    "blood sugar random",
+    "glucose - random",
+    "random glucose",
+    "rbs"
+  ],
+  "hba1c": [
+    "hba1c - glycated hemoglobin",
+    "glycosylated hemoglobin",
+    "glycated hemoglobin",
+    "glycohemoglobin",
+    "hemoglobin a1c",
+    "hba1c"
+  ],
+  "estimated_average_glucose": [
+    "estimated average glucose",
+    "average blood glucose",
+    "mean blood glucose",
+    "eag"
+  ],
+  "tsh": [
+    "thyroid stimulating hormone (tsh)",
+    "thyroid stimulating hormone",
+    "tsh - ultrasensitive",
+    "ultrasensitive tsh",
+    "serum tsh",
+    "tsh"
+  ],
+  "t3_total": [
+    "total triiodothyronine",
+    "t3 - total",
+    "triiodothyronine",
+    "total t3",
+    "t3 total",
+    "t3"
+  ],
+  "t4_total": [
+    "total thyroxine",
+    "t4 - total",
+    "thyroxine",
+    "total t4",
+    "t4 total",
+    "t4"
+  ],
+  "free_t3": [
+    "ft3 - free triiodothyronine",
+    "free triiodothyronine",
+    "free t3 (ft3)",
+    "free t3",
+    "ft3"
+  ],
+  "free_t4": [
+    "ft4 - free thyroxine",
+    "free thyroxine",
+    "free t4 (ft4)",
+    "free t4",
+    "ft4"
+  ],
+  "alt_sgpt": [
+    "serum glutamic pyruvic transaminase",
+    "alanine aminotransferase",
+    "alanine transaminase",
+    "sgpt / alt",
+    "alt / sgpt",
+    "alt/sgpt",
+    "sgpt/alt",
+    "alt (sgpt)",
+    "sgpt",
+    "alt"
+  ],
+  "ast_sgot": [
+    "serum glutamic oxaloacetic transaminase",
+    "aspartate aminotransferase",
+    "aspartate transaminase",
+    "sgot / ast",
+    "ast / sgot",
+    "ast/sgot",
+    "sgot/ast",
+    "ast (sgot)",
+    "sgot",
+    "ast"
+  ],
+  "alkaline_phosphatase": [
+    "serum alkaline phosphatase",
+    "alkaline phosphatase (alp)",
+    "alkaline phosphatase",
+    "alk phos",
+    "alp"
+  ],
+  "total_bilirubin": [
+    "total serum bilirubin",
+    "serum bilirubin total",
+    "bilirubin (total)",
+    "bilirubin - total",
+    "bilirubin total",
+    "total bilirubin",
+    "bilirubin"
+  ],
+  "direct_bilirubin": [
+    "serum bilirubin direct",
+    "bilirubin (direct)",
+    "bilirubin - direct",
+    "conjugated bilirubin",
+    "bilirubin direct",
+    "direct bilirubin"
+  ],
+  "indirect_bilirubin": [
+    "serum bilirubin indirect",
+    "unconjugated bilirubin",
+    "bilirubin (indirect)",
+    "bilirubin - indirect",
+    "bilirubin indirect",
+    "indirect bilirubin"
+  ],
+  "total_protein": [
+    "serum total protein",
+    "protein (total)",
+    "protein total",
+    "total proteins",
+    "total protein",
+    "serum protein"
+  ],
+  "albumin": [
+    "albumin - serum",
+    "serum albumin",
+    "albumin"
+  ],
+  "globulin": [
+    "globulin - serum",
+    "serum globulin",
+    "globulin"
+  ],
+  "albumin_globulin_ratio": [
+    "albumin / globulin ratio",
+    "albumin/globulin ratio",
+    "albumin globulin ratio",
+    "a/g ratio",
+    "a / g ratio",
+    "a:g ratio",
+    "ag ratio"
+  ],
+  "ggt": [
+    "gamma-glutamyl transferase",
+    "gamma glutamyl transferase",
+    "gamma glutamyl transpeptidase",
+    "gamma-gt (ggt)",
+    "gamma gt (ggt)",
+    "gamma-gt",
+    "gamma gt",
+    "ggt",
+    "ggtp"
+  ],
+  "ldh": [
+    "lactate dehydrogenase (ldh)",
+    "lactate dehydrogenase",
+    "serum ldh",
+    "ldh"
+  ],
+  "serum_creatinine": [
+    "creatinine - serum",
+    "serum creatinine",
+    "creatinine serum",
+    "s. creatinine",
+    "s creatinine",
+    "creatinine"
+  ],
+  "blood_urea": [
+    "urea - serum",
+    "blood urea",
+    "urea serum",
+    "s. urea",
+    "s urea",
+    "urea"
+  ],
+  "blood_urea_nitrogen": [
+    "blood urea nitrogen",
+    "serum bun",
+    "urea nitrogen",
+    "b.u.n.",
+    "bun"
+  ],
+  "uric_acid": [
+    "uric acid - serum",
+    "serum uric acid",
+    "s. uric acid",
+    "s uric acid",
+    "uric acid"
+  ],
+  "egfr": [
+    "estimated glomerular filtration rate",
+    "egfr (ckd-epi)",
+    "glomerular filtration rate",
+    "estimated gfr",
+    "egfr",
+    "gfr"
+  ],
+  "urea_creatinine_ratio": [
+    "urea / creatinine ratio",
+    "urea/creatinine ratio",
+    "bun/creatinine ratio",
+    "bun / creatinine ratio",
+    "urea : creatinine ratio",
+    "bun:creatinine ratio"
+  ],
+  "sodium": [
+    "sodium (na+)",
+    "sodium - serum",
+    "serum sodium",
+    "sodium",
+    "na+"
+  ],
+  "potassium": [
+    "potassium (k+)",
+    "potassium - serum",
+    "serum potassium",
+    "potassium",
+    "k+"
+  ],
+  "calcium": [
+    "total calcium",
+    "serum calcium",
+    "s calcium",
+    "s. calcium",
+    "calcium"
+  ],
+  "phosphorus": [
+    "serum phosphorus",
+    "serum phosphate",
+    "s phosphorus",
+    "s. phosphorus",
+    "phosphorus",
+    "phosphate"
+  ],
+  "magnesium": [
+    "serum magnesium",
+    "s magnesium",
+    "s. magnesium",
+    "magnesium",
+    "mg"
+  ],
+  "chloride": [
+    "serum chloride",
+    "s chloride",
+    "s. chloride",
+    "chloride",
+    "cl-",
+    "cl"
+  ],
+  "vitamin_d": [
+    "total 25-hydroxy vitamin d",
+    "25-hydroxy vitamin d total",
+    "25 hydroxy vitamin d total",
+    "25 - oh vitamin d total",
+    "25-oh vitamin d total",
+    "25-hydroxy vitamin d",
+    "25-hydroxyvitamin d",
+    "25 - oh vitamin d",
+    "25-oh vitamin d",
+    "vitamin d (25-oh)",
+    "vitamin d total",
+    "25(oh)d",
+    "vitamin d",
+    "vit d"
+  ],
+  "vitamin_d3": [
+    "25-hydroxyvitamin d3",
+    "25-oh vitamin d3",
+    "cholecalciferol",
+    "vitamin d3",
+    "vit d3"
+  ],
+  "vitamin_d2": [
+    "25-hydroxyvitamin d2",
+    "25-oh vitamin d2",
+    "ergocalciferol",
+    "vitamin d2",
+    "vit d2"
+  ],
+  "vitamin_b12": [
+    "serum vitamin b12",
+    "vitamin b-12",
+    "cyanocobalamin",
+    "vitamin b12",
+    "serum b12",
+    "vit b12",
+    "b12"
+  ],
+  "vitamin_b1": [
+    "vitamin b-1",
+    "vitamin b1",
+    "thiamine",
+    "thiamin",
+    "vit b1"
+  ],
+  "vitamin_b2": [
+    "vitamin b-2",
+    "vitamin b2",
+    "riboflavine",
+    "riboflavin",
+    "vit b2"
+  ],
+  "vitamin_b3": [
+    "nicotinic acid",
+    "vitamin b-3",
+    "vitamin b3",
+    "niacin",
+    "vit b3"
+  ],
+  "vitamin_b5": [
+    "pantothenic acid",
+    "vitamin b-5",
+    "vitamin b5",
+    "vit b5"
+  ],
+  "vitamin_b6": [
+    "vitamin b-6",
+    "vitamin b6",
+    "pyridoxine",
+    "vit b6",
+    "p5p"
+  ],
+  "vitamin_b7": [
+    "vitamin b-7",
+    "vitamin b7",
+    "biotin",
+    "vit b7"
+  ],
+  "folate": [
+    "serum folic acid",
+    "serum folate",
+    "vitamin b9",
+    "folic acid",
+    "folate"
+  ],
+  "ferritin": [
+    "ferritin - serum",
+    "serum ferritin",
+    "s. ferritin",
+    "s ferritin",
+    "ferritin"
+  ],
+  "iron": [
+    "iron - serum",
+    "serum iron",
+    "total iron",
+    "s. iron",
+    "s iron",
+    "iron"
+  ],
+  "serum_urea": [
+    "serum urea",
+    "urea",
+    "senum urea",
+    "blood urea",
+    "s. urea",
+    "s urea",
+    "urea - serum",
+    "urea serum"
+  ],
+  "bun": [
+    "blood urea nitrogen (bun)",
+    "blood urea nitrogen",
+    "bleod uree nitregen (bun)",
+    "bleod uree nitregen",
+    "uree nitregen",
+    "bun",
+    "serum bun",
+    "urea nitrogen",
+    "b.u.n."
+  ],
+  "serum_creatinine": [
+    "serum creatinine",
+    "creatinine",
+    "senum creatiaine",
+    "creatiaine",
+    "s. creatinine",
+    "s creatinine",
+    "sr creatinine",
+    "creatinine - serum"
+  ],
+  "egfr": [
+    "estimated glomerular filtration rate (egfr)",
+    "estimated glomerular filtration rate",
+    "estineted glceneralar piltration rote (egfr)",
+    "estineted glceneralar piltration rote",
+    "egfr",
+    "e-gfr",
+    "estimated gfr",
+    "gfr (estimated)",
+    "egfr (ckd-epi)",
+    "glomerular filtration rate",
+    "egfr category"
+  ],
+  "uric_acid": [
+    "serum uric acid",
+    "uric acid",
+    "senum uric acid",
+    "s. uric acid",
+    "s uric acid",
+    "uric acid - serum",
+    "urate"
+  ],
+  "sodium": [
+    "serum sodium",
+    "sodium",
+    "senum sodiun",
+    "sodiun",
+    "sodium (na+)",
+    "sodium - serum",
+    "s. sodium",
+    "s sodium",
+    "na+"
+  ],
+  "potassium": [
+    "serum potassium",
+    "potassium",
+    "serum potassism",
+    "potassism",
+    "potassium (k+)",
+    "potassium - serum",
+    "s. potassium",
+    "s potassium",
+    "k+"
+  ],
+  "chloride": [
+    "serum chloride",
+    "chloride",
+    "senum chloride",
+    "s. chloride",
+    "s chloride",
+    "chloride - serum",
+    "cl-",
+    "cl"
+  ],
+  "bicarbonate": [
+    "serum bicarbonate (co; total)",
+    "serum bicarbonate (co2 total)",
+    "serum bicarbonate (co2, total)",
+    "serum bicarbotate (co; total)",
+    "serum bicarbotate",
+    "bicarbotate",
+    "serum bicarbonate",
+    "bicarbonate",
+    "co2 total",
+    "total co2",
+    "co2",
+    "carbon dioxide",
+    "total carbon dioxide",
+    "serum co2"
+  ],
+  "calcium": [
+    "serum calcium",
+    "calcium",
+    "total calcium",
+    "s. calcium",
+    "s calcium",
+    "calcium - serum",
+    "ca++"
+  ],
+  "phosphorus": [
+    "serum phosphorus (inerganic paosphate)",
+    "serum phosphorus (inorganic phosphate)",
+    "serum phosphorus",
+    "phosphorus",
+    "inorganic phosphate",
+    "phosphate",
+    "serum phosphate",
+    "s. phosphorus",
+    "s phosphorus",
+    "inerganic paosphate",
+    "phosphorus - serum"
+  ],
+  "magnesium": [
+    "serum magnesium",
+    "magnesium",
+    "serum mogaesium",
+    "mogaesium",
+    "s. magnesium",
+    "s magnesium",
+    "magnesium - serum",
+    "mg++",
+    "mg"
+  ],
+  "urea_creatinine_ratio": [
+    "urea / creatinine ratio",
+    "urea/creatinine ratio",
+    "bun/creatinine ratio",
+    "bun / creatinine ratio",
+    "urea : creatinine ratio",
+    "bun:creatinine ratio"
+  ]
+}

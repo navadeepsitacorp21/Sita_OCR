@@ -1,0 +1,1493 @@
+{
+  "mcv": {
+    "name": "Mean Corpuscular Volume (MCV)",
+    "what_it_measures": "MCV measures the average size and volume of your red blood cells (erythrocytes).",
+    "low": {
+      "title": "Low MCV (Microcytosis)",
+      "description": "Your red blood cells are smaller than the expected reference range.",
+      "possible_associations": [
+        "Iron deficiency anemia",
+        "Thalassemia trait or hemoglobinopathy",
+        "Anemia of chronic disease",
+        "Lead poisoning (rare)"
+      ],
+      "recommendation": "Discuss this result with a healthcare professional, especially if hemoglobin or ferritin is also reduced."
+    },
+    "high": {
+      "title": "High MCV (Macrocytosis)",
+      "description": "Your red blood cells are larger than the expected reference range.",
+      "possible_associations": [
+        "Vitamin B12 or folate deficiency",
+        "Thyroid underactivity (hypothyroidism)",
+        "Liver dysfunction or alcohol consumption",
+        "Certain medications"
+      ],
+      "recommendation": "Consult a physician to review B12/folate levels, thyroid function, or recent medications."
+    },
+    "normal": {
+      "title": "Normal MCV",
+      "description": "Your red blood cell size is within the expected physiological reference interval.",
+      "possible_associations": [
+        "Normal red blood cell development and morphology"
+      ],
+      "recommendation": "No specific action required."
+    }
+  },
+  "mch": {
+    "name": "Mean Corpuscular Hemoglobin (MCH)",
+    "what_it_measures": "MCH measures the average amount of oxygen-carrying hemoglobin inside a single red blood cell.",
+    "low": {
+      "title": "Low MCH (Hypochromia)",
+      "description": "The average amount of hemoglobin per red blood cell is lower than the reference interval.",
+      "possible_associations": [
+        "Iron deficiency anemia",
+        "Microcytic anemia",
+        "Hemoglobin synthesis abnormalities"
+      ],
+      "recommendation": "Consult your clinician to correlate with total hemoglobin and iron studies."
+    },
+    "high": {
+      "title": "High MCH (Hyperchromia)",
+      "description": "The average amount of hemoglobin per red blood cell is higher than the reference interval.",
+      "possible_associations": [
+        "Macrocytic anemia",
+        "Vitamin B12 or folate insufficiency",
+        "High cold agglutinins (laboratory artifact)"
+      ],
+      "recommendation": "Discuss with your physician in conjunction with MCV and vitamin levels."
+    },
+    "normal": {
+      "title": "Normal MCH",
+      "description": "Hemoglobin content per red blood cell is balanced and within normal reference limits.",
+      "possible_associations": [
+        "Healthy hemoglobin distribution"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "hemoglobin": {
+    "name": "Hemoglobin (Hb)",
+    "what_it_measures": "Hemoglobin is the iron-rich protein in red blood cells that transports oxygen from the lungs to tissues throughout your body.",
+    "low": {
+      "title": "Low Hemoglobin (Anemia)",
+      "description": "Circulating hemoglobin is below the provided laboratory reference range.",
+      "possible_associations": [
+        "Nutritional anemia (iron, B12, or folate deficiency)",
+        "Blood loss (acute or chronic)",
+        "Bone marrow or kidney conditions",
+        "Hemolysis or chronic inflammatory disease"
+      ],
+      "recommendation": "Review these findings promptly with a healthcare provider to investigate underlying causes of anemia."
+    },
+    "high": {
+      "title": "High Hemoglobin (Polycythemia / Erythrocytosis)",
+      "description": "Hemoglobin concentration is elevated above expected reference limits.",
+      "possible_associations": [
+        "Dehydration or fluid loss",
+        "High altitude living or smoking",
+        "Chronic pulmonary or cardiac conditions",
+        "Polycythemia vera (primary marrow disorder)"
+      ],
+      "recommendation": "Discuss hydration status, smoking, or respiratory health with your doctor."
+    },
+    "normal": {
+      "title": "Normal Hemoglobin",
+      "description": "Oxygen-carrying capacity of blood is within healthy physiological limits.",
+      "possible_associations": [
+        "Adequate oxygen transport and red cell production"
+      ],
+      "recommendation": "Maintain a balanced diet rich in iron and essential vitamins."
+    }
+  },
+  "rbc_count": {
+    "name": "Red Blood Cell Count (RBC)",
+    "what_it_measures": "The total number of oxygen-carrying red blood cells per volume of blood.",
+    "low": {
+      "title": "Low RBC Count",
+      "description": "Total red blood cells are reduced below the reference range.",
+      "possible_associations": [
+        "Anemia of diverse etiologies",
+        "Blood loss",
+        "Bone marrow suppression or renal insufficiency"
+      ],
+      "recommendation": "Correlate with hemoglobin and hematocrit with your physician."
+    },
+    "high": {
+      "title": "High RBC Count",
+      "description": "Circulating red blood cell numbers are above the reference range.",
+      "possible_associations": [
+        "Dehydration",
+        "Hypoxemia (low oxygen levels)",
+        "Erythrocytosis"
+      ],
+      "recommendation": "Review hydration status and pulmonary health with a healthcare professional."
+    },
+    "normal": {
+      "title": "Normal RBC Count",
+      "description": "Red blood cell concentration is within normal limits.",
+      "possible_associations": [
+        "Healthy erythropoiesis"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "pcv": {
+    "name": "Packed Cell Volume / Hematocrit (PCV)",
+    "what_it_measures": "The proportion of total blood volume made up of red blood cells.",
+    "low": {
+      "title": "Low Hematocrit (PCV)",
+      "description": "The percentage of red blood cells in your blood is below reference limits.",
+      "possible_associations": [
+        "Anemia",
+        "Overhydration",
+        "Nutritional deficiencies or blood loss"
+      ],
+      "recommendation": "Correlate with hemoglobin and red blood cell counts with a clinician."
+    },
+    "high": {
+      "title": "High Hematocrit (PCV)",
+      "description": "The percentage of red blood cells in your blood is elevated.",
+      "possible_associations": [
+        "Dehydration (hemoconcentration)",
+        "Chronic low oxygen conditions",
+        "Polycythemia"
+      ],
+      "recommendation": "Ensure adequate hydration and discuss with your healthcare provider."
+    },
+    "normal": {
+      "title": "Normal Hematocrit",
+      "description": "Cellular proportion of blood is within optimal parameters.",
+      "possible_associations": [
+        "Balanced blood volume and cell ratio"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "mchc": {
+    "name": "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+    "what_it_measures": "Average concentration of hemoglobin inside a given volume of packed red blood cells.",
+    "low": {
+      "title": "Low MCHC",
+      "description": "Hemoglobin concentration inside red cells is reduced.",
+      "possible_associations": [
+        "Hypochromic anemia",
+        "Iron deficiency",
+        "Thalassemia"
+      ],
+      "recommendation": "Review alongside MCV and iron parameters with a physician."
+    },
+    "high": {
+      "title": "High MCHC",
+      "description": "Hemoglobin is densely packed inside red cells.",
+      "possible_associations": [
+        "Hereditary spherocytosis",
+        "Severe dehydration",
+        "Cold agglutinin laboratory artifact"
+      ],
+      "recommendation": "Discuss with a healthcare professional to rule out pre-analytical artifacts or membrane disorders."
+    },
+    "normal": {
+      "title": "Normal MCHC",
+      "description": "Red blood cell hemoglobin concentration is normal.",
+      "possible_associations": [
+        "Normal red cell density"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "rdw": {
+    "name": "Red Cell Distribution Width (RDW)",
+    "what_it_measures": "The amount of variation in size and volume (anisocytosis) among circulating red blood cells.",
+    "high": {
+      "title": "Elevated RDW (Anisocytosis)",
+      "description": "Red blood cells exhibit higher-than-normal variation in size.",
+      "possible_associations": [
+        "Early mixed nutritional deficiencies (iron, B12, or folate)",
+        "Recent blood transfusion",
+        "Hemoglobinopathies",
+        "Reticulocytosis"
+      ],
+      "recommendation": "A clinical provider can evaluate RDW in combination with MCV to differentiate types of anemia."
+    },
+    "low": {
+      "title": "Low RDW",
+      "description": "Red blood cells are remarkably uniform in size.",
+      "possible_associations": [
+        "Normal physiological variant (usually of no clinical consequence)"
+      ],
+      "recommendation": "No clinical concern when other red cell indices are normal."
+    },
+    "normal": {
+      "title": "Normal RDW",
+      "description": "Red blood cells display uniform, standard size distribution.",
+      "possible_associations": [
+        "Homogeneous red blood cell population"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "wbc_count": {
+    "name": "White Blood Cell Count (WBC)",
+    "what_it_measures": "The total number of immune system defense cells per volume of blood.",
+    "low": {
+      "title": "Low WBC Count (Leukopenia)",
+      "description": "White blood cell count is below the expected reference range.",
+      "possible_associations": [
+        "Viral infections",
+        "Autoimmune conditions",
+        "Bone marrow suppression or medication effect",
+        "Severe nutritional deficiency"
+      ],
+      "recommendation": "Consult a doctor, particularly if you have recurring infections, fever, or fatigue."
+    },
+    "high": {
+      "title": "High WBC Count (Leukocytosis)",
+      "description": "White blood cell count is elevated above the expected reference range.",
+      "possible_associations": [
+        "Bacterial or acute infection",
+        "Tissue inflammation or physical trauma",
+        "Significant physiological stress",
+        "Allergic reaction or hematologic disorder"
+      ],
+      "recommendation": "Correlate with symptoms of infection or inflammation with a healthcare professional."
+    },
+    "normal": {
+      "title": "Normal WBC Count",
+      "description": "Total immune cell count is within expected protective parameters.",
+      "possible_associations": [
+        "Adequate cellular immune defense"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "neutrophils": {
+    "name": "Neutrophils",
+    "what_it_measures": "The primary white blood cell subgroup responsible for defending against bacterial and acute infections.",
+    "low": {
+      "title": "Low Neutrophils (Neutropenia)",
+      "description": "Neutrophil percentage or count is reduced.",
+      "possible_associations": [
+        "Recent viral illness",
+        "Medication side-effects",
+        "Autoimmune diseases",
+        "Severe sepsis (consumption)"
+      ],
+      "recommendation": "Discuss with a healthcare provider if experiencing frequent or persistent infections."
+    },
+    "high": {
+      "title": "High Neutrophils (Neutrophilia)",
+      "description": "Neutrophil levels are higher than reference limits.",
+      "possible_associations": [
+        "Bacterial infection",
+        "Systemic acute inflammation",
+        "Physical or emotional stress",
+        "Tissue injury"
+      ],
+      "recommendation": "Review alongside your physician for signs of acute infection or inflammation."
+    },
+    "normal": {
+      "title": "Normal Neutrophils",
+      "description": "Neutrophil levels are within normal range.",
+      "possible_associations": [
+        "Balanced first-line immune defense"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "lymphocytes": {
+    "name": "Lymphocytes",
+    "what_it_measures": "Immune cells including T-cells, B-cells, and NK-cells that combat viruses and build adaptive immunity.",
+    "low": {
+      "title": "Low Lymphocytes (Lymphopenia)",
+      "description": "Lymphocyte count or percentage is below the reference interval.",
+      "possible_associations": [
+        "Viral infections (e.g. influenza, COVID-19)",
+        "Steroid medication usage",
+        "Immunodeficiency conditions",
+        "Systemic stress"
+      ],
+      "recommendation": "Discuss with your doctor in context with overall WBC count and recent viral exposures."
+    },
+    "high": {
+      "title": "High Lymphocytes (Lymphocytosis)",
+      "description": "Lymphocyte count or percentage is elevated.",
+      "possible_associations": [
+        "Viral infections (e.g. mononucleosis, CMV, hepatitis)",
+        "Chronic intracellular infection",
+        "Reactive immune response"
+      ],
+      "recommendation": "Correlate with recent viral symptoms or exposures with a physician."
+    },
+    "normal": {
+      "title": "Normal Lymphocytes",
+      "description": "Lymphocyte balance is healthy.",
+      "possible_associations": [
+        "Normal adaptive immunity"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "eosinophils": {
+    "name": "Eosinophils",
+    "what_it_measures": "Specialized white blood cells involved in allergic responses and defense against parasitic infections.",
+    "high": {
+      "title": "High Eosinophils (Eosinophilia)",
+      "description": "Eosinophil count is higher than expected.",
+      "possible_associations": [
+        "Allergies, asthma, or eczema",
+        "Drug hypersensitivity reactions",
+        "Parasitic infections",
+        "Eosinophilic gastrointestinal disorders"
+      ],
+      "recommendation": "Review history of allergies, rashes, or new medications with your healthcare professional."
+    },
+    "low": {
+      "title": "Low Eosinophils",
+      "description": "Eosinophils are at the lower end of the reference range.",
+      "possible_associations": [
+        "Normal physiological variant (often 0–1% normally)",
+        "Acute stress or corticosteroid use"
+      ],
+      "recommendation": "Typically of minimal clinical concern on routine panels."
+    },
+    "normal": {
+      "title": "Normal Eosinophils",
+      "description": "Eosinophil proportion is within standard limits.",
+      "possible_associations": [
+        "Absence of significant active eosinophilic allergy or response"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "monocytes": {
+    "name": "Monocytes",
+    "what_it_measures": "Large immune cells that migrate into tissues to become macrophages and clear cellular debris and pathogens.",
+    "high": {
+      "title": "High Monocytes (Monocytosis)",
+      "description": "Monocyte levels are above the reference range.",
+      "possible_associations": [
+        "Chronic infection or recovery phase of acute infection",
+        "Inflammatory bowel or autoimmune conditions",
+        "Granulomatous disorders"
+      ],
+      "recommendation": "Discuss with a healthcare provider to assess any chronic symptoms or inflammatory markers."
+    },
+    "low": {
+      "title": "Low Monocytes (Monocytopenia)",
+      "description": "Monocyte levels are below the reference range.",
+      "possible_associations": [
+        "Acute infection stress",
+        "Bone marrow suppression"
+      ],
+      "recommendation": "Correlate with total WBC and clinical symptoms with your doctor."
+    },
+    "normal": {
+      "title": "Normal Monocytes",
+      "description": "Monocyte counts are within expected limits.",
+      "possible_associations": [
+        "Healthy cellular debris clearance"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "basophils": {
+    "name": "Basophils",
+    "what_it_measures": "Rare white blood cells that release histamine during inflammatory and allergic reactions.",
+    "high": {
+      "title": "High Basophils (Basophilia)",
+      "description": "Basophil levels are above reference range.",
+      "possible_associations": [
+        "Allergic or inflammatory reactions",
+        "Hypothyroidism",
+        "Myeloproliferative conditions (rare)"
+      ],
+      "recommendation": "Discuss with a clinician if persistent across multiple reports."
+    },
+    "low": {
+      "title": "Low Basophils",
+      "description": "Basophils are near zero.",
+      "possible_associations": [
+        "Normal finding (basophils normally constitute 0–1% of leukocytes)"
+      ],
+      "recommendation": "No clinical concern."
+    },
+    "normal": {
+      "title": "Normal Basophils",
+      "description": "Basophils are within the expected physiological range.",
+      "possible_associations": [
+        "Standard mast/basophil activity"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "platelet_count": {
+    "name": "Platelet Count",
+    "what_it_measures": "Small cell fragments essential for normal blood clotting and vessel repair.",
+    "low": {
+      "title": "Low Platelets (Thrombocytopenia)",
+      "description": "Platelet count is below the provided reference interval.",
+      "possible_associations": [
+        "Immune-mediated platelet destruction (ITP)",
+        "Medication effect",
+        "Viral infections or splenic enlargement",
+        "In vitro clumping artifact (pseudo-thrombocytopenia)"
+      ],
+      "recommendation": "Consult a healthcare professional promptly, especially if you notice easy bruising or bleeding."
+    },
+    "high": {
+      "title": "High Platelets (Thrombocytosis)",
+      "description": "Platelet count is above the reference interval.",
+      "possible_associations": [
+        "Reactive thrombocytosis (infection, inflammation, surgery)",
+        "Iron deficiency anemia",
+        "Essential thrombocythemia"
+      ],
+      "recommendation": "Review alongside inflammatory markers and iron status with your doctor."
+    },
+    "normal": {
+      "title": "Normal Platelet Count",
+      "description": "Platelet count is within normal clotting parameters.",
+      "possible_associations": [
+        "Normal hemostatic and clotting capacity"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "mpv": {
+    "name": "Mean Platelet Volume (MPV)",
+    "what_it_measures": "Measures the average size of circulating platelets, reflecting bone marrow platelet production.",
+    "low": {
+      "title": "Low MPV",
+      "description": "Platelets are smaller than average.",
+      "possible_associations": [
+        "Decreased bone marrow megakaryocyte activity",
+        "Aplastic anemia or cytotoxic therapy"
+      ],
+      "recommendation": "Correlate with total platelet count with your physician."
+    },
+    "high": {
+      "title": "High MPV",
+      "description": "Platelets are larger and generally younger, indicating active bone marrow production.",
+      "possible_associations": [
+        "Compensatory platelet turnover / destruction",
+        "Recovery after thrombocytopenia",
+        "Cardiovascular risk correlation"
+      ],
+      "recommendation": "Review with your physician in context with overall platelet count."
+    },
+    "normal": {
+      "title": "Normal MPV",
+      "description": "Platelet volume distribution is balanced.",
+      "possible_associations": [
+        "Steady-state platelet production"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "total_bilirubin": {
+    "name": "Total Bilirubin",
+    "what_it_measures": "Measures the total amount of yellow pigment formed from the normal breakdown of red blood cells.",
+    "high": {
+      "title": "Elevated Total Bilirubin (Hyperbilirubinemia)",
+      "description": "Bilirubin concentration in blood is above the reference range.",
+      "possible_associations": [
+        "Benign Gilbert syndrome",
+        "Liver inflammation (hepatitis)",
+        "Biliary obstruction (gallstones)",
+        "Increased red blood cell breakdown (hemolysis)"
+      ],
+      "recommendation": "Discuss with a doctor to differentiate direct vs indirect fractions and review liver enzymes."
+    },
+    "low": {
+      "title": "Low Total Bilirubin",
+      "description": "Bilirubin is at the lower end of measurement.",
+      "possible_associations": [
+        "No known pathological significance; often normal"
+      ],
+      "recommendation": "No action needed."
+    },
+    "normal": {
+      "title": "Normal Total Bilirubin",
+      "description": "Bilirubin metabolism and liver clearance are within normal parameters.",
+      "possible_associations": [
+        "Healthy hepatic clearance"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "direct_bilirubin": {
+    "name": "Direct (Conjugated) Bilirubin",
+    "what_it_measures": "The water-soluble form of bilirubin processed by the liver ready for bile excretion.",
+    "high": {
+      "title": "High Direct Bilirubin",
+      "description": "Conjugated bilirubin is elevated, indicating impaired bile outflow.",
+      "possible_associations": [
+        "Biliary tract obstruction (e.g. gallstones, strictures)",
+        "Hepatocellular injury",
+        "Cholestasis"
+      ],
+      "recommendation": "Prompt evaluation by a physician with liver enzymes and abdominal ultrasound if indicated."
+    },
+    "normal": {
+      "title": "Normal Direct Bilirubin",
+      "description": "Biliary excretion of bilirubin is normal.",
+      "possible_associations": [
+        "Normal biliary transport"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "indirect_bilirubin": {
+    "name": "Indirect (Unconjugated) Bilirubin",
+    "what_it_measures": "The lipid-soluble form of bilirubin bound to albumin prior to hepatic processing.",
+    "high": {
+      "title": "High Indirect Bilirubin",
+      "description": "Unconjugated bilirubin is elevated in circulation.",
+      "possible_associations": [
+        "Gilbert syndrome (benign genetic variation)",
+        "Hemolytic anemia",
+        "Ineffective erythropoiesis"
+      ],
+      "recommendation": "Discuss with your physician to correlate with complete blood counts and reticulocyte counts."
+    },
+    "normal": {
+      "title": "Normal Indirect Bilirubin",
+      "description": "Unconjugated bilirubin levels are within healthy limits.",
+      "possible_associations": [
+        "Normal bilirubin conjugating capacity"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "alt_sgpt": {
+    "name": "Alanine Aminotransferase (ALT / SGPT)",
+    "what_it_measures": "An enzyme found predominantly in liver cells; leaks into bloodstream during hepatocellular stress.",
+    "high": {
+      "title": "Elevated ALT (Liver Enzyme)",
+      "description": "ALT is elevated above the biological reference limit.",
+      "possible_associations": [
+        "Hepatic steatosis (fatty liver)",
+        "Medication or supplement effect",
+        "Viral hepatitis",
+        "Alcohol consumption or acute liver inflammation"
+      ],
+      "recommendation": "Consult a healthcare provider to review medications, lifestyle factors, and schedule follow-up liver testing."
+    },
+    "normal": {
+      "title": "Normal ALT",
+      "description": "Liver cellular integrity is normal.",
+      "possible_associations": [
+        "Absence of active significant hepatic cell stress"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "ast_sgot": {
+    "name": "Aspartate Aminotransferase (AST / SGOT)",
+    "what_it_measures": "An enzyme present in liver cells, heart, and skeletal muscle tissue.",
+    "high": {
+      "title": "Elevated AST",
+      "description": "AST is above the biological reference limit.",
+      "possible_associations": [
+        "Liver parenchymal inflammation",
+        "Intense muscle exercise or muscle injury",
+        "Cardiac or hepatic stress",
+        "Medication or alcohol effect"
+      ],
+      "recommendation": "Discuss with a physician in conjunction with ALT and recent strenuous physical activity."
+    },
+    "normal": {
+      "title": "Normal AST",
+      "description": "AST levels are within expected limits.",
+      "possible_associations": [
+        "Healthy liver and muscle enzyme activity"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "alkaline_phosphatase": {
+    "name": "Alkaline Phosphatase (ALP)",
+    "what_it_measures": "An enzyme associated with the bile ducts in the liver and bone metabolism.",
+    "high": {
+      "title": "Elevated Alkaline Phosphatase",
+      "description": "ALP is higher than expected.",
+      "possible_associations": [
+        "Bile duct inflammation or obstruction (cholestasis)",
+        "High bone turnover (normal in adolescents and healing fractures)",
+        "Vitamin D deficiency or bone conditions",
+        "Pregnancy (placental ALP)"
+      ],
+      "recommendation": "A clinician can correlate with GGT to determine if elevation originates from liver or bone."
+    },
+    "low": {
+      "title": "Low Alkaline Phosphatase",
+      "description": "ALP is below the reference interval.",
+      "possible_associations": [
+        "Zinc deficiency",
+        "Severe malnutrition",
+        "Hypothyroidism"
+      ],
+      "recommendation": "Review nutritional intake with a healthcare professional."
+    },
+    "normal": {
+      "title": "Normal Alkaline Phosphatase",
+      "description": "Biliary and bone enzyme activity is within normal ranges.",
+      "possible_associations": [
+        "Normal biliary and osteoblast activity"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "ggt": {
+    "name": "Gamma-Glutamyl Transferase (GGT)",
+    "what_it_measures": "A sensitive biliary enzyme that helps distinguish liver from bone causes of elevated alkaline phosphatase.",
+    "high": {
+      "title": "Elevated GGT",
+      "description": "GGT is above the biological reference limit.",
+      "possible_associations": [
+        "Biliary tract inflammation",
+        "Fatty liver disease",
+        "Alcohol exposure",
+        "Certain prescription medications (e.g. anticonvulsants)"
+      ],
+      "recommendation": "Review with your doctor to assess biliary health and hepatic medication tolerance."
+    },
+    "normal": {
+      "title": "Normal GGT",
+      "description": "GGT is within normal limits.",
+      "possible_associations": [
+        "Healthy biliary epithelium"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "total_protein": {
+    "name": "Total Protein",
+    "what_it_measures": "Measures the combined level of two main blood protein classes: albumin and globulin.",
+    "low": {
+      "title": "Low Total Protein",
+      "description": "Serum protein is below reference range.",
+      "possible_associations": [
+        "Impaired hepatic protein synthesis",
+        "Renal or intestinal protein loss",
+        "Malnutrition or severe malabsorption"
+      ],
+      "recommendation": "Review with a clinician alongside albumin, urine protein, and dietary history."
+    },
+    "high": {
+      "title": "High Total Protein",
+      "description": "Serum protein is elevated above normal.",
+      "possible_associations": [
+        "Dehydration (hemoconcentration)",
+        "Chronic inflammatory states",
+        "Immune conditions or monoclonal gammopathies"
+      ],
+      "recommendation": "Evaluate hydration and discuss with a physician if persistent."
+    },
+    "normal": {
+      "title": "Normal Total Protein",
+      "description": "Circulating protein content is normal.",
+      "possible_associations": [
+        "Adequate liver synthesis and protein retention"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "albumin": {
+    "name": "Albumin",
+    "what_it_measures": "The main protein synthesized by the liver, maintaining oncotic blood pressure and transporting hormones and drugs.",
+    "low": {
+      "title": "Low Albumin (Hypoalbuminemia)",
+      "description": "Serum albumin is reduced below expected limits.",
+      "possible_associations": [
+        "Chronic liver disease (decreased synthesis)",
+        "Kidney disease (proteinuria / nephrotic syndrome)",
+        "Severe systemic inflammation or malnutrition",
+        "Gastrointestinal protein loss"
+      ],
+      "recommendation": "Promptly review with a healthcare provider to examine liver, kidney, and nutritional health."
+    },
+    "high": {
+      "title": "High Albumin",
+      "description": "Albumin is elevated.",
+      "possible_associations": [
+        "Dehydration is the primary cause"
+      ],
+      "recommendation": "Increase oral fluid intake and retest if indicated."
+    },
+    "normal": {
+      "title": "Normal Albumin",
+      "description": "Albumin levels are healthy.",
+      "possible_associations": [
+        "Healthy hepatic synthetic function and renal retention"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "globulin": {
+    "name": "Globulin",
+    "what_it_measures": "A family of proteins including antibodies (immunoglobulins), enzymes, and transport proteins.",
+    "low": {
+      "title": "Low Globulin",
+      "description": "Globulin fraction is below expected values.",
+      "possible_associations": [
+        "Immune deficiency (hypogammaglobulinemia)",
+        "Renal protein loss"
+      ],
+      "recommendation": "Consult a physician to review immune status if recurrent infections are present."
+    },
+    "high": {
+      "title": "High Globulin",
+      "description": "Globulin fraction is elevated.",
+      "possible_associations": [
+        "Chronic infection or autoimmune disease",
+        "Chronic liver disease",
+        "Paraproteinemia"
+      ],
+      "recommendation": "Discuss with your doctor to investigate inflammatory or immune markers."
+    },
+    "normal": {
+      "title": "Normal Globulin",
+      "description": "Globulin fraction is within normal limits.",
+      "possible_associations": [
+        "Balanced antibody and globulin production"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "albumin_globulin_ratio": {
+    "name": "Albumin/Globulin Ratio (A/G Ratio)",
+    "what_it_measures": "The mathematical proportion of albumin relative to globulin proteins.",
+    "low": {
+      "title": "Low A/G Ratio",
+      "description": "Albumin is lower or globulin is higher than standard proportion.",
+      "possible_associations": [
+        "Chronic liver disease",
+        "Autoimmune conditions",
+        "Kidney disease with selective albumin loss"
+      ],
+      "recommendation": "Review alongside individual albumin and globulin values with a doctor."
+    },
+    "high": {
+      "title": "High A/G Ratio",
+      "description": "Albumin is high relative to globulins.",
+      "possible_associations": [
+        "Underproduction of immunoglobulins",
+        "High protein dietary factors"
+      ],
+      "recommendation": "Generally of less clinical concern; correlate with immune history."
+    },
+    "normal": {
+      "title": "Normal A/G Ratio",
+      "description": "Protein fractions are well balanced.",
+      "possible_associations": [
+        "Healthy protein balance"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "ldh": {
+    "name": "Lactate Dehydrogenase (LDH)",
+    "what_it_measures": "An intracellular enzyme present across nearly all body tissues; released when cells undergo damage or stress.",
+    "high": {
+      "title": "Elevated Lactate Dehydrogenase (LDH)",
+      "description": "LDH is above the biological reference interval.",
+      "possible_associations": [
+        "Tissue turnover, strenuous exercise, or muscle injury",
+        "Hemolysis (red cell breakdown)",
+        "Liver disease or pulmonary conditions",
+        "Pre-analytical blood sample hemolysis"
+      ],
+      "recommendation": "Discuss with a healthcare provider; often repeated with a fresh sample to exclude in vitro hemolysis."
+    },
+    "normal": {
+      "title": "Normal LDH",
+      "description": "LDH is within normal limits.",
+      "possible_associations": [
+        "Absence of significant non-specific tissue breakdown"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "serum_urea": {
+    "name": "Serum Urea",
+    "what_it_measures": "Waste product produced by the liver from protein breakdown and cleared primarily by the kidneys.",
+    "high": {
+      "title": "Elevated Serum Urea",
+      "description": "Urea concentration is above reference range.",
+      "possible_associations": [
+        "Dehydration or low fluid intake",
+        "Reduced kidney filtration (renal impairment)",
+        "High protein diet or gastrointestinal bleeding",
+        "Heart failure (decreased renal perfusion)"
+      ],
+      "recommendation": "Ensure adequate hydration and discuss with a doctor in combination with creatinine."
+    },
+    "low": {
+      "title": "Low Serum Urea",
+      "description": "Urea is below expected range.",
+      "possible_associations": [
+        "Low protein diet or severe malnutrition",
+        "Severe liver dysfunction (impaired urea synthesis)",
+        "Overhydration"
+      ],
+      "recommendation": "Review diet and liver health with your healthcare provider."
+    },
+    "normal": {
+      "title": "Normal Serum Urea",
+      "description": "Urea production and renal elimination are balanced.",
+      "possible_associations": [
+        "Adequate renal clearance of nitrogenous waste"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "bun": {
+    "name": "Blood Urea Nitrogen (BUN)",
+    "what_it_measures": "The amount of nitrogen in your blood that comes from the waste product urea.",
+    "high": {
+      "title": "Elevated Blood Urea Nitrogen (BUN)",
+      "description": "BUN is above normal reference limits.",
+      "possible_associations": [
+        "Renal dysfunction",
+        "Dehydration",
+        "Excessive protein catabolism",
+        "Congestive heart failure"
+      ],
+      "recommendation": "Review kidney parameters and fluid balance with your physician."
+    },
+    "low": {
+      "title": "Low BUN",
+      "description": "BUN is below normal limits.",
+      "possible_associations": [
+        "Malnutrition",
+        "Overhydration",
+        "Severe liver disease"
+      ],
+      "recommendation": "Correlate with general nutrition with a clinician."
+    },
+    "normal": {
+      "title": "Normal BUN",
+      "description": "BUN is within normal limits.",
+      "possible_associations": [
+        "Healthy renal clearance"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "serum_creatinine": {
+    "name": "Serum Creatinine",
+    "what_it_measures": "A breakdown byproduct of muscle creatine phosphate; the gold standard marker for glomerular filtration efficiency.",
+    "high": {
+      "title": "Elevated Creatinine",
+      "description": "Creatinine level is above reference range.",
+      "possible_associations": [
+        "Reduced glomerular filtration / kidney dysfunction",
+        "Severe dehydration",
+        "High muscle mass, creatine supplements, or vigorous exercise",
+        "Urinary tract obstruction"
+      ],
+      "recommendation": "Consult a healthcare provider promptly to evaluate eGFR, urine analysis, and medication safety."
+    },
+    "low": {
+      "title": "Low Creatinine",
+      "description": "Creatinine is lower than reference range.",
+      "possible_associations": [
+        "Low muscle mass (sarcopenia or frail state)",
+        "Pregnancy",
+        "Severe malnutrition"
+      ],
+      "recommendation": "Correlate with muscle mass and nutritional status."
+    },
+    "normal": {
+      "title": "Normal Creatinine",
+      "description": "Creatinine clearance and glomerular filtration are within expected parameters.",
+      "possible_associations": [
+        "Healthy kidney filtration function"
+      ],
+      "recommendation": "Maintain balanced hydration and kidney health."
+    }
+  },
+  "egfr": {
+    "name": "Estimated Glomerular Filtration Rate (eGFR)",
+    "what_it_measures": "Calculated rate measuring how efficiently the microscopic filters in your kidneys (glomeruli) clean blood.",
+    "low": {
+      "title": "Reduced eGFR",
+      "description": "eGFR is below expected threshold (e.g. < 90 or < 60 mL/min/1.73m2).",
+      "possible_associations": [
+        "Chronic kidney disease (CKD stage 2–5)",
+        "Acute kidney injury or temporary hypoperfusion",
+        "Hypertension or diabetic nephropathy"
+      ],
+      "recommendation": "Consult a physician or nephrologist for comprehensive kidney function evaluation."
+    },
+    "normal": {
+      "title": "Normal eGFR (>= 90)",
+      "description": "Kidney filtering rate is within normal or optimal capacity.",
+      "possible_associations": [
+        "Normal renal filtering capacity"
+      ],
+      "recommendation": "No action needed; preserve with healthy lifestyle and hydration."
+    }
+  },
+  "uric_acid": {
+    "name": "Uric Acid",
+    "what_it_measures": "Waste byproduct formed when the body breaks down purines found in food and bodily tissues.",
+    "high": {
+      "title": "Elevated Uric Acid (Hyperuricemia)",
+      "description": "Uric acid is elevated above the biological reference interval.",
+      "possible_associations": [
+        "Risk of gout (joint crystal inflammation)",
+        "Kidney stones (urate nephrolithiasis)",
+        "Decreased renal excretion",
+        "High purine diet, alcohol, or metabolic syndrome"
+      ],
+      "recommendation": "Discuss with a doctor, especially if experiencing joint pain (notably in the big toe) or urinary symptoms."
+    },
+    "low": {
+      "title": "Low Uric Acid",
+      "description": "Uric acid is below reference limits.",
+      "possible_associations": [
+        "Low purine diet",
+        "Certain medications (allopurinol, probenecid)",
+        "Renal tubular transport variants"
+      ],
+      "recommendation": "Generally benign unless taking urate-lowering medications."
+    },
+    "normal": {
+      "title": "Normal Uric Acid",
+      "description": "Uric acid production and clearance are balanced.",
+      "possible_associations": [
+        "Healthy purine metabolism"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "sodium": {
+    "name": "Sodium (Na+)",
+    "what_it_measures": "Major extracellular electrolyte regulating blood volume, fluid balance, and cellular membrane potentials.",
+    "low": {
+      "title": "Low Sodium (Hyponatremia)",
+      "description": "Sodium concentration is below normal reference limits.",
+      "possible_associations": [
+        "Excessive fluid intake or water retention",
+        "Diuretic medication use",
+        "Heart, liver, or kidney conditions",
+        "Syndrome of inappropriate ADH (SIADH)"
+      ],
+      "recommendation": "Review fluid balance and medications promptly with a physician."
+    },
+    "high": {
+      "title": "High Sodium (Hypernatremia)",
+      "description": "Sodium concentration is elevated.",
+      "possible_associations": [
+        "Dehydration or inadequate water intake",
+        "Excessive fluid loss (sweating, fever, diarrhea)",
+        "Diabetes insipidus"
+      ],
+      "recommendation": "Increase hydration and consult a doctor if experiencing significant thirst or weakness."
+    },
+    "normal": {
+      "title": "Normal Sodium",
+      "description": "Fluid balance and extracellular electrolyte levels are optimal.",
+      "possible_associations": [
+        "Normal osmotic and fluid regulation"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "potassium": {
+    "name": "Potassium (K+)",
+    "what_it_measures": "Critical intracellular electrolyte governing heart rhythm, nerve conduction, and muscle contraction.",
+    "low": {
+      "title": "Low Potassium (Hypokalemia)",
+      "description": "Potassium is below reference limits.",
+      "possible_associations": [
+        "Diuretic use or laxatives",
+        "Gastrointestinal loss (vomiting, diarrhea)",
+        "Inadequate dietary intake",
+        "Adrenal hormone excess"
+      ],
+      "recommendation": "Consult a healthcare provider; significant hypokalemia requires prompt attention due to cardiac sensitivity."
+    },
+    "high": {
+      "title": "High Potassium (Hyperkalemia)",
+      "description": "Potassium is above the biological reference interval.",
+      "possible_associations": [
+        "Reduced kidney excretion",
+        "Medications (ACE inhibitors, ARBs, potassium-sparing diuretics)",
+        "Cellular breakdown (hemolysis, tissue trauma)",
+        "Laboratory artifact (fused or hemolyzed blood sample)"
+      ],
+      "recommendation": "Promptly consult a physician to review medications and confirm with an unhemolyzed repeat sample."
+    },
+    "normal": {
+      "title": "Normal Potassium",
+      "description": "Cardiovascular and neuromodulatory potassium balance is normal.",
+      "possible_associations": [
+        "Stable cardiac and muscular electrophysiology"
+      ],
+      "recommendation": "Maintain a balanced electrolyte diet."
+    }
+  },
+  "chloride": {
+    "name": "Chloride (Cl-)",
+    "what_it_measures": "Major extracellular anion working in tandem with sodium and potassium to maintain acid-base balance.",
+    "low": {
+      "title": "Low Chloride (Hypochloremia)",
+      "description": "Chloride is below reference range.",
+      "possible_associations": [
+        "Prolonged vomiting or gastric suction",
+        "Metabolic alkalosis",
+        "Diuretic therapy"
+      ],
+      "recommendation": "Review alongside sodium and bicarbonate with a physician."
+    },
+    "high": {
+      "title": "High Chloride (Hyperchloremia)",
+      "description": "Chloride is elevated.",
+      "possible_associations": [
+        "Dehydration",
+        "Renal tubular acidosis",
+        "Metabolic acidosis"
+      ],
+      "recommendation": "Discuss electrolyte and fluid balance with a clinician."
+    },
+    "normal": {
+      "title": "Normal Chloride",
+      "description": "Acid-base and fluid balance are well maintained.",
+      "possible_associations": [
+        "Healthy anion balance"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "bicarbonate": {
+    "name": "Bicarbonate (CO2 Total)",
+    "what_it_measures": "An electrolyte measuring blood buffering capacity and systemic acid-base equilibrium.",
+    "low": {
+      "title": "Low Bicarbonate",
+      "description": "Bicarbonate is below normal limits.",
+      "possible_associations": [
+        "Metabolic acidosis",
+        "Kidney disease",
+        "Diabetic ketoacidosis or chronic diarrhea"
+      ],
+      "recommendation": "Review with your physician in context with overall kidney function and metabolic panel."
+    },
+    "high": {
+      "title": "High Bicarbonate",
+      "description": "Bicarbonate is above normal limits.",
+      "possible_associations": [
+        "Metabolic alkalosis",
+        "Chronic respiratory conditions (COPD compensation)",
+        "Diuretic usage or persistent vomiting"
+      ],
+      "recommendation": "Discuss with a healthcare professional alongside respiratory health."
+    },
+    "normal": {
+      "title": "Normal Bicarbonate",
+      "description": "Acid-base buffering capacity is healthy.",
+      "possible_associations": [
+        "Stable physiological acid-base equilibrium"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "calcium": {
+    "name": "Serum Calcium",
+    "what_it_measures": "Essential mineral required for bone mineralization, cardiac function, blood clotting, and nerve signaling.",
+    "low": {
+      "title": "Low Calcium (Hypocalcemia)",
+      "description": "Calcium level is below reference interval.",
+      "possible_associations": [
+        "Vitamin D deficiency",
+        "Low serum albumin (pseudo-hypocalcemia)",
+        "Hypoparathyroidism",
+        "Chronic kidney disease"
+      ],
+      "recommendation": "Check albumin and vitamin D levels with your healthcare provider."
+    },
+    "high": {
+      "title": "High Calcium (Hypercalcemia)",
+      "description": "Calcium is above reference interval.",
+      "possible_associations": [
+        "Hyperparathyroidism",
+        "Excess vitamin D intake",
+        "Certain chronic granulomatous conditions or medications"
+      ],
+      "recommendation": "Consult a physician for PTH (parathyroid hormone) and vitamin D evaluation."
+    },
+    "normal": {
+      "title": "Normal Calcium",
+      "description": "Serum calcium homeostasis is normal.",
+      "possible_associations": [
+        "Normal bone and neuromodulatory mineral balance"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "phosphorus": {
+    "name": "Serum Phosphorus (Inorganic Phosphate)",
+    "what_it_measures": "Mineral collaborating with calcium in bone structure and cellular ATP energy transfer.",
+    "low": {
+      "title": "Low Phosphorus (Hypophosphatemia)",
+      "description": "Phosphorus is below the reference range.",
+      "possible_associations": [
+        "Hyperparathyroidism",
+        "Vitamin D deficiency",
+        "Malnutrition or refeeding"
+      ],
+      "recommendation": "Review alongside calcium and vitamin D with a doctor."
+    },
+    "high": {
+      "title": "High Phosphorus (Hyperphosphatemia)",
+      "description": "Phosphorus is elevated.",
+      "possible_associations": [
+        "Chronic kidney disease (reduced renal clearance)",
+        "Hypoparathyroidism",
+        "Excessive phosphate intake"
+      ],
+      "recommendation": "Discuss with your physician to evaluate kidney clearance and diet."
+    },
+    "normal": {
+      "title": "Normal Phosphorus",
+      "description": "Phosphate balance is healthy.",
+      "possible_associations": [
+        "Normal mineral and cellular energy metabolism"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "magnesium": {
+    "name": "Serum Magnesium",
+    "what_it_measures": "Essential cofactor for over 300 enzymatic processes including muscle contraction, nerve function, and blood pressure regulation.",
+    "low": {
+      "title": "Low Magnesium (Hypomagnesemia)",
+      "description": "Magnesium is below reference interval.",
+      "possible_associations": [
+        "Inadequate dietary intake or malabsorption",
+        "Diuretic medication use or proton pump inhibitors (PPIs)",
+        "Alcohol consumption",
+        "Gastrointestinal losses"
+      ],
+      "recommendation": "Review medication list and dietary intake with a healthcare professional."
+    },
+    "high": {
+      "title": "High Magnesium (Hypermagnesemia)",
+      "description": "Magnesium is above reference interval.",
+      "possible_associations": [
+        "Renal impairment (reduced excretion)",
+        "Excessive use of magnesium-containing antacids or laxatives"
+      ],
+      "recommendation": "Discuss with a physician and review over-the-counter supplements and antacids."
+    },
+    "normal": {
+      "title": "Normal Magnesium",
+      "description": "Serum magnesium is within optimal limits.",
+      "possible_associations": [
+        "Adequate cellular cofactor availability"
+      ],
+      "recommendation": "No action needed."
+    }
+  },
+  "total_cholesterol": {
+    "name": "Total Cholesterol",
+    "what_it_measures": "Total cholesterol measures the combined amount of all cholesterol fractions circulating in your blood, including LDL, HDL, and VLDL.",
+    "high": {
+      "title": "High Total Cholesterol",
+      "description": "Total circulating cholesterol is above the desirable reference threshold.",
+      "possible_associations": [
+        "Dietary intake of saturated fats",
+        "Genetic predisposition (familial hypercholesterolemia)",
+        "Physical inactivity",
+        "Metabolic factors or thyroid changes"
+      ],
+      "recommendation": "Discuss dietary habits and lifestyle with your doctor, and correlate with individual lipoprotein fractions."
+    },
+    "low": {
+      "title": "Low Total Cholesterol",
+      "description": "Total circulating cholesterol is below the expected reference interval.",
+      "possible_associations": [
+        "Malabsorption or inadequate caloric intake",
+        "Hyperthyroidism",
+        "Severe liver dysfunction"
+      ],
+      "recommendation": "Consult your healthcare provider if associated with unexplained weight loss or malabsorption."
+    },
+    "normal": {
+      "title": "Desirable Total Cholesterol",
+      "description": "Total cholesterol is within the standard reference target.",
+      "possible_associations": [
+        "Balanced lipid metabolism"
+      ],
+      "recommendation": "Maintain balanced nutrition and regular physical activity."
+    }
+  },
+  "ldl": {
+    "name": "LDL Cholesterol",
+    "what_it_measures": "LDL (low-density lipoprotein) transports cholesterol from the liver to peripheral tissues.",
+    "high": {
+      "title": "Elevated LDL Cholesterol",
+      "description": "LDL cholesterol is above the desirable target threshold.",
+      "possible_associations": [
+        "Diet high in saturated fats and trans fats",
+        "Familial or polygenic hypercholesterolemia",
+        "Sedentary lifestyle"
+      ],
+      "recommendation": "Review nutrition, cardiovascular risk factors, and exercise with your physician."
+    },
+    "low": {
+      "title": "Low LDL Cholesterol",
+      "description": "LDL cholesterol is below typical laboratory thresholds.",
+      "possible_associations": [
+        "Hypocholesterolemia",
+        "Malabsorption",
+        "Lipid-lowering medication response"
+      ],
+      "recommendation": "Usually favorable; correlate clinically with medications or nutritional intake."
+    },
+    "normal": {
+      "title": "Optimal LDL Cholesterol",
+      "description": "LDL cholesterol is within the optimal target range.",
+      "possible_associations": [
+        "Desirable lipoprotein distribution"
+      ],
+      "recommendation": "Continue healthy dietary habits and regular exercise."
+    }
+  },
+  "hdl": {
+    "name": "HDL Cholesterol",
+    "what_it_measures": "HDL (high-density lipoprotein) transports cholesterol from peripheral tissues back to the liver for excretion.",
+    "low": {
+      "title": "Low HDL Cholesterol",
+      "description": "HDL cholesterol is below the protective reference target.",
+      "possible_associations": [
+        "Sedentary lifestyle",
+        "Cigarette smoking",
+        "Metabolic syndrome or insulin resistance",
+        "High-refined carbohydrate diet"
+      ],
+      "recommendation": "Consult your healthcare provider about aerobic exercise, healthy unsaturated fats, and lifestyle modifications."
+    },
+    "high": {
+      "title": "High HDL Cholesterol",
+      "description": "HDL cholesterol is above standard reference limits.",
+      "possible_associations": [
+        "Regular aerobic exercise",
+        "Genetic factors",
+        "Moderate unsaturated fat consumption"
+      ],
+      "recommendation": "Generally considered protective; evaluate in the complete lipid profile context."
+    },
+    "normal": {
+      "title": "Normal HDL Cholesterol",
+      "description": "HDL cholesterol meets the recommended target.",
+      "possible_associations": [
+        "Effective reverse cholesterol transport"
+      ],
+      "recommendation": "Maintain regular aerobic physical activity."
+    }
+  },
+  "triglycerides": {
+    "name": "Triglycerides",
+    "what_it_measures": "Triglycerides are the primary storage form of fat in the body, reflecting circulating energy reserves.",
+    "high": {
+      "title": "High Triglycerides",
+      "description": "Serum triglyceride levels exceed the standard reference threshold.",
+      "possible_associations": [
+        "Recent high-carbohydrate or high-sugar meals",
+        "Alcohol consumption",
+        "Physical inactivity",
+        "Metabolic syndrome or insulin resistance"
+      ],
+      "recommendation": "Review fasting duration prior to testing, dietary sugars, alcohol intake, and exercise with your physician."
+    },
+    "low": {
+      "title": "Low Triglycerides",
+      "description": "Triglyceride levels are below expected norms.",
+      "possible_associations": [
+        "Very low-fat diet",
+        "Malnutrition",
+        "Hyperthyroidism"
+      ],
+      "recommendation": "Consult your doctor if associated with low caloric intake or unintentional weight loss."
+    },
+    "normal": {
+      "title": "Normal Triglycerides",
+      "description": "Triglyceride levels are within the normal reference interval.",
+      "possible_associations": [
+        "Balanced caloric intake and energy metabolism"
+      ],
+      "recommendation": "Maintain balanced lifestyle and nutritional habits."
+    }
+  },
+  "vldl": {
+    "name": "VLDL Cholesterol",
+    "what_it_measures": "VLDL (very low-density lipoprotein) is produced by the liver to deliver triglycerides to body tissues.",
+    "high": {
+      "title": "Elevated VLDL Cholesterol",
+      "description": "VLDL cholesterol is elevated above the reference threshold.",
+      "possible_associations": [
+        "Elevated triglycerides",
+        "High-carbohydrate diet",
+        "Metabolic factors"
+      ],
+      "recommendation": "Discuss metabolic and triglyceride health with your healthcare provider."
+    },
+    "normal": {
+      "title": "Normal VLDL Cholesterol",
+      "description": "VLDL cholesterol is within standard limits.",
+      "possible_associations": [
+        "Normal hepatic triglyceride packaging and clearance"
+      ],
+      "recommendation": "No specific action required."
+    }
+  },
+  "non_hdl": {
+    "name": "Non-HDL Cholesterol",
+    "what_it_measures": "Non-HDL cholesterol represents total cholesterol minus HDL, capturing all atherogenic lipoproteins.",
+    "high": {
+      "title": "Elevated Non-HDL Cholesterol",
+      "description": "Non-HDL cholesterol is above standard reference targets.",
+      "possible_associations": [
+        "Combined elevations in LDL and VLDL",
+        "Dietary saturated fat intake",
+        "Metabolic factors"
+      ],
+      "recommendation": "Discuss comprehensive lipid management with your physician."
+    },
+    "normal": {
+      "title": "Optimal Non-HDL Cholesterol",
+      "description": "Non-HDL cholesterol is within desirable boundaries.",
+      "possible_associations": [
+        "Favorable atherogenic particle profile"
+      ],
+      "recommendation": "Continue cardiovascular-supportive lifestyle habits."
+    }
+  },
+  "cholesterol_hdl_ratio": {
+    "name": "Cholesterol / HDL Ratio",
+    "what_it_measures": "Calculated ratio of total cholesterol to protective HDL cholesterol.",
+    "high": {
+      "title": "Elevated TC / HDL Ratio",
+      "description": "The ratio of total cholesterol relative to HDL is above the target reference limit.",
+      "possible_associations": [
+        "Higher total cholesterol relative to HDL",
+        "Reduced protective lipoprotein clearance"
+      ],
+      "recommendation": "Review with your physician alongside lifestyle factors and individual lipid parameters."
+    },
+    "normal": {
+      "title": "Normal TC / HDL Ratio",
+      "description": "The ratio between total cholesterol and HDL is within standard limits.",
+      "possible_associations": [
+        "Balanced ratio of circulating cholesterol to HDL"
+      ],
+      "recommendation": "Maintain regular activity and a balanced diet."
+    }
+  },
+  "ldl_hdl_ratio": {
+    "name": "LDL / HDL Ratio",
+    "what_it_measures": "Calculated ratio comparing atherogenic LDL cholesterol to protective HDL cholesterol.",
+    "high": {
+      "title": "Elevated LDL / HDL Ratio",
+      "description": "The proportion of LDL relative to HDL is higher than the recommended reference target.",
+      "possible_associations": [
+        "Elevated LDL or reduced HDL",
+        "Lifestyle and dietary factors"
+      ],
+      "recommendation": "Discuss lipid balance and dietary optimization with your physician."
+    },
+    "normal": {
+      "title": "Normal LDL / HDL Ratio",
+      "description": "The LDL to HDL proportion is within desirable limits.",
+      "possible_associations": [
+        "Healthy balance between atherogenic and protective lipoproteins"
+      ],
+      "recommendation": "Maintain current lifestyle and nutrition."
+    }
+  },
+  "apolipoprotein_a1": {
+    "name": "Apolipoprotein A1 (ApoA1)",
+    "what_it_measures": "Apolipoprotein A1 is the principal protein component of HDL particles, facilitating reverse cholesterol transport.",
+    "low": {
+      "title": "Low Apolipoprotein A1",
+      "description": "ApoA1 levels are below the reference interval.",
+      "possible_associations": [
+        "Reduced HDL concentration",
+        "Sedentary lifestyle",
+        "Metabolic factors"
+      ],
+      "recommendation": "Review with your healthcare provider alongside HDL and lifestyle habits."
+    },
+    "high": {
+      "title": "Elevated Apolipoprotein A1",
+      "description": "ApoA1 levels are above the expected interval.",
+      "possible_associations": [
+        "Elevated HDL",
+        "Physical activity",
+        "Genetic variations"
+      ],
+      "recommendation": "Usually considered protective; correlate with overall lipid profile."
+    },
+    "normal": {
+      "title": "Normal Apolipoprotein A1",
+      "description": "ApoA1 concentration is within expected reference bounds.",
+      "possible_associations": [
+        "Normal HDL structural protein support"
+      ],
+      "recommendation": "Continue cardiovascular-supportive lifestyle."
+    }
+  },
+  "apolipoprotein_b": {
+    "name": "Apolipoprotein B (ApoB)",
+    "what_it_measures": "Apolipoprotein B is the primary structural protein on atherogenic lipoproteins, indicating total particle count.",
+    "high": {
+      "title": "Elevated Apolipoprotein B",
+      "description": "ApoB levels are above the reference limit.",
+      "possible_associations": [
+        "Increased number of circulating atherogenic particles (LDL, VLDL)",
+        "Metabolic risk factors"
+      ],
+      "recommendation": "Review particle numbers and cardiovascular risk factors with your healthcare provider."
+    },
+    "low": {
+      "title": "Low Apolipoprotein B",
+      "description": "ApoB levels are below standard reference thresholds.",
+      "possible_associations": [
+        "Low circulating atherogenic particles",
+        "Malnutrition or lipid-lowering therapy"
+      ],
+      "recommendation": "Correlate with medications and nutritional history."
+    },
+    "normal": {
+      "title": "Normal Apolipoprotein B",
+      "description": "ApoB levels are within the expected target interval.",
+      "possible_associations": [
+        "Healthy atherogenic lipoprotein particle count"
+      ],
+      "recommendation": "Maintain current healthy lifestyle habits."
+    }
+  },
+  "apob_apoa1_ratio": {
+    "name": "Apo B / Apo A1 Ratio",
+    "what_it_measures": "Ratio evaluating the balance between atherogenic (ApoB) and protective (ApoA1) lipoprotein particles.",
+    "high": {
+      "title": "Elevated Apo B / Apo A1 Ratio",
+      "description": "The balance favors atherogenic particles relative to protective HDL particles.",
+      "possible_associations": [
+        "Higher ApoB particle density relative to ApoA1"
+      ],
+      "recommendation": "Review with your clinician in the context of your broader lipid profile."
+    },
+    "normal": {
+      "title": "Normal Apo B / Apo A1 Ratio",
+      "description": "The balance between atherogenic and anti-atherogenic particles is within standard limits.",
+      "possible_associations": [
+        "Balanced particle distribution"
+      ],
+      "recommendation": "Continue healthy diet and physical activity."
+    }
+  }
+}
