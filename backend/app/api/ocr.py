@@ -278,11 +278,11 @@ async def process_ocr_report(
     try:
         ocr_result = await extract_text(wrapped_file, request_id=report_id)
     except Exception as exc:
-        logger.error("[%s] OCR extraction error: %s", report_id, exc)
+        logger.error("[%s] OCR extraction error: %s", report_id, exc, exc_info=True)
         return structured_error_response(
             status_code=422,
             error_code="OCR_PROCESSING_FAILED",
-            message="Failed to process document with OCR engine.",
+            message=f"Failed to process document with OCR engine: {str(exc)}",
             user_id=user_id,
             report_id=report_id,
         )
