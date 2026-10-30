@@ -52,7 +52,7 @@ def normalize_report_type_code(report_type: str) -> str:
     rt = (report_type or "").upper()
     if rt in ("LIVER_FUNCTION_TEST", "LFT"):
         return "LFT"
-    if rt in ("KIDNEY_FUNCTION_TEST", "KFT"):
+    if rt in ("KIDNEY_FUNCTION_TEST", "KFT", "RENAL_FUNCTION_TEST", "RFT"):
         return "KFT"
     if rt in ("COMPLETE_BLOOD_COUNT", "CBC"):
         return "CBC"
@@ -60,9 +60,9 @@ def normalize_report_type_code(report_type: str) -> str:
         return "LIPID"
     if rt in ("THYROID_PROFILE", "THYROID"):
         return "THYROID"
-    if rt in ("DIABETES_MONITORING", "HBA1C"):
+    if rt in ("DIABETES_PROFILE", "DIABETES_MONITORING", "HBA1C"):
         return "HBA1C"
-    if rt in ("VITAMIN_PANEL", "VITAMIN"):
+    if rt in ("VITAMIN_PROFILE", "VITAMIN_PANEL", "VITAMIN"):
         return "VITAMIN"
     return rt or "UNKNOWN"
 

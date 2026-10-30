@@ -305,3 +305,37 @@ def test_medical_reports_analyze_without_user_id_backward_compatible():
     assert data["user_id"] is None
     assert len(data["biomarkers"]) == 12
 
+
+# ── 7. Multi-Report Type Support Verification ────────────────────────────────
+
+def test_multi_report_support_kft():
+    """
+    Verify KFT report is identified, routed, parsed, and produces the generic schema.
+    """
+    kft_fixture = os.path.join(FIXTURES_DIR, "original_care_diagnostics_kft.png")
+    if not os.path.exists(kft_fixture):
+        pytest.skip("KFT fixture not available")
+
+    user_uuid = str(uuid.uuid4())
+    with open(kft_fixture, "rb") as f:
+        res = client.post(
+            "/api/v1/ocr/process",
+            data={"user_id": user_uuid},
+            files={"file": ("care_kft.png", f, "image/png")},
+        )
+
+    assert res.status_code == 200
+    data = res.json()
+    assert data["success"] is True
+    assert data["report_type"] == "KFT"
+    assert data["report"]["report_type"] == "KFT"
+    assert data["report"]["user_id"] == user_uuid
+    assert len(data["biomarkers"]) > 0
+    for bm in data["biomarkers"]:
+        assert bm["user_id"] == user_uuid
+        assert bm["report_id"] == data["report_id"]
+        assert "name" in bm
+        assert "value" in bm
+        assert "unit" in bm
+
+
