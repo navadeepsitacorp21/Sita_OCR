@@ -142,11 +142,12 @@ async def extract_text(file: UploadFile, request_id: Optional[str] = None) -> di
                 h, w = img.shape[:2]
                 image_dims = f"{w}x{h}"
                 max_dim = max(h, w)
-                if max_dim > 2048:
-                    scale = 2048.0 / max_dim
+                if max_dim > 1500:
+                    scale = 1500.0 / max_dim
                     img = cv2.resize(img, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
                     cv2.imwrite(temp_path, img)
                     image_dims = f"{img.shape[1]}x{img.shape[0]}"
+                del img
             t_preprocess_total_ms += (time.perf_counter() - t_pre0) * 1000
 
             t_inf0 = time.perf_counter()

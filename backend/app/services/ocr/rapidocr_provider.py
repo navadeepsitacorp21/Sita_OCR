@@ -93,7 +93,8 @@ class RapidOCRProvider(BaseOCRProvider):
         t0 = time.perf_counter()
         from rapidocr_onnxruntime import RapidOCR
         self.engine = RapidOCR(use_angle_cls=False, text_score=0.3)
-        self.engine.text_recognizer.rec_batch_num = 12
+        # Reduced batch size from 12 to 4 to dramatically lower memory usage within 512MB RAM limit
+        self.engine.text_recognizer.rec_batch_num = 4
         # Pre-warm ONNX execution providers with a minimal dummy image so the first upload doesn't hit a cold-start penalty
         try:
             dummy = np.zeros((64, 64, 3), dtype=np.uint8)
@@ -107,12 +108,11 @@ class RapidOCRProvider(BaseOCRProvider):
         img = self.engine.load_img(image_input)
         h, w = img.shape[:2]
 
-        # Automatic downscaling for high-resolution images (> 2048px) to prevent CPU timeouts
-        # Coordinates are mapped back to original image scale so downstream token geometry is 100% preserved.
+        # Automatic downscaling for images (> 1500px) to prevent memory spikes in 512MB RAM
         scale = 1.0
         max_dim = max(h, w)
-        if max_dim > 2048:
-            scale = 2048.0 / max_dim
+        if max_dim > 1500:
+            scale = 1500.0 / max_dim
             img = cv2.resize(img, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
 
         dt_boxes, det_elapse = self.engine.text_detector(img)
