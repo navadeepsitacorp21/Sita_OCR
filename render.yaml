@@ -24,7 +24,7 @@ services:
       - key: OCR_ENABLE_FALLBACK
         value: false
       - key: OCR_TIMEOUT_SECONDS
-        value: "60"
+        value: "180"
       # SQLite stored on the persistent disk — survives deploys
       - key: DATABASE_URL
         value: sqlite:////data/health_vault.db

@@ -25,12 +25,12 @@ class OCRTimeoutError(OCRError):
 
 def get_ocr_timeout_seconds() -> float:
     """
-    Get configured OCR timeout in seconds. Defaults to 60.0 seconds.
+    Get configured OCR timeout in seconds. Defaults to 180.0 seconds on cloud containers.
     """
     try:
-        return float(os.getenv("OCR_TIMEOUT_SECONDS", "60"))
+        return float(os.getenv("OCR_TIMEOUT_SECONDS", "180"))
     except ValueError:
-        return 60.0
+        return 180.0
 
 
 def is_fallback_enabled() -> bool:
