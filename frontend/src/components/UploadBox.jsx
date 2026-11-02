@@ -14,7 +14,64 @@ export default function UploadBox({ isLoading, selectedFile, setSelectedFile }) 
     return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + " " + sizes[i];
   };
 
-  const validateAndSetFile = (file) => {
+  const compressImage = async (file) => {
+    // Only compress image formats, leave PDFs untouched
+    if (!file.type.startsWith("image/")) {
+      return file;
+    }
+
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = (event) => {
+        const img = new Image();
+        img.src = event.target.result;
+        img.onload = () => {
+          const MAX_DIM = 1200;
+          let width = img.width;
+          let height = img.height;
+
+          if (width > height) {
+            if (width > MAX_DIM) {
+              height = Math.round((height * MAX_DIM) / width);
+              width = MAX_DIM;
+            }
+          } else {
+            if (height > MAX_DIM) {
+              width = Math.round((width * MAX_DIM) / height);
+              height = MAX_DIM;
+            }
+          }
+
+          const canvas = document.createElement("canvas");
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, width, height);
+
+          canvas.toBlob(
+            (blob) => {
+              if (blob) {
+                const optimizedFile = new File([blob], file.name.replace(/\.[^/.]+$/, ".jpg"), {
+                  type: "image/jpeg",
+                  lastModified: Date.now(),
+                });
+                resolve(optimizedFile);
+              } else {
+                resolve(file);
+              }
+            },
+            "image/jpeg",
+            0.85
+          );
+        };
+        img.onerror = () => resolve(file);
+      };
+      reader.onerror = () => resolve(file);
+    });
+  };
+
+  const validateAndSetFile = async (file) => {
     setLocalError(null);
     if (!file) return;
 
@@ -30,7 +87,12 @@ export default function UploadBox({ isLoading, selectedFile, setSelectedFile }) 
       return;
     }
 
-    setSelectedFile(file);
+    try {
+      const processedFile = await compressImage(file);
+      setSelectedFile(processedFile);
+    } catch {
+      setSelectedFile(file);
+    }
   };
 
   const handleDrag = (e) => {

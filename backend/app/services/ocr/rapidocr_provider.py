@@ -112,8 +112,8 @@ class RapidOCRProvider(BaseOCRProvider):
         # Automatic downscaling for images (> 1200px) to strictly maintain < 200MB memory ceiling
         scale = 1.0
         max_dim = max(h, w)
-        if max_dim > 1200:
-            scale = 1200.0 / max_dim
+        if max_dim > 2048:
+            scale = 2048.0 / max_dim
             img = cv2.resize(img, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
 
         dt_boxes, det_elapse = self.engine.text_detector(img)

@@ -26,6 +26,10 @@ def _extract_lines_and_confidence_from_ocr_res(result) -> List[Dict[str, Any]]:
     return provider.extract_from_image(result) if hasattr(provider, "extract_from_image") else []
 
 
+# Shared global semaphore to prevent parallel OCR runs from exceeding 512MB RAM on free tier
+_OCR_SEMAPHORE = asyncio.Semaphore(1)
+
+
 async def extract_text(file: UploadFile, request_id: Optional[str] = None) -> dict:
     """
     Extract text and OCR confidence scores from PDF or image using RapidOCR ONNX backend.
@@ -103,11 +107,13 @@ async def extract_text(file: UploadFile, request_id: Optional[str] = None) -> di
                                 img = cv2.resize(img, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
                                 cv2.imwrite(image_path, img)
                                 image_dims = f"{img.shape[1]}x{img.shape[0]}"
+                            del img
                         t_preprocess_total_ms += (time.perf_counter() - t_pre0) * 1000
 
                         t_inf0 = time.perf_counter()
                         try:
-                            lines = await asyncio.to_thread(extract_with_provider_resilience, image_path, provider)
+                            async with _OCR_SEMAPHORE:
+                                lines = await asyncio.to_thread(extract_with_provider_resilience, image_path, provider)
                         except OCRTimeoutError as te:
                             logger.error(f"[{req_id}] Page {page_num}/{num_pages} OCR timeout: {te}")
                             raise HTTPException(status_code=504, detail=f"OCR timeout processing page {page_num}: {te}")
@@ -152,7 +158,8 @@ async def extract_text(file: UploadFile, request_id: Optional[str] = None) -> di
 
             t_inf0 = time.perf_counter()
             try:
-                lines = await asyncio.to_thread(extract_with_provider_resilience, temp_path, provider)
+                async with _OCR_SEMAPHORE:
+                    lines = await asyncio.to_thread(extract_with_provider_resilience, temp_path, provider)
             except OCRTimeoutError as te:
                 logger.error(f"[{req_id}] Image OCR timeout: {te}")
                 raise HTTPException(status_code=504, detail=f"OCR timeout: {te}")
