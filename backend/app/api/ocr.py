@@ -414,6 +414,11 @@ async def process_ocr_report(
 
     import gc
     gc.collect()
+    try:
+        import ctypes
+        ctypes.CDLL('libc.so.6').malloc_trim(0)
+    except Exception:
+        pass
 
     return {
         "success": True,
